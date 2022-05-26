@@ -156,3 +156,12 @@ const CustomizeViewTwoThree=(CardOneCalenderOne,CardOneCalenderTwo,CardOneTopThr
     document.getElementById(SectionFive).style.width="93%"
 
 }
+
+const OpenAlert=(AlertMsg)=>{
+    document.getElementById(AlertMsg).style.display="block"
+    console.log(AlertMsg)
+}
+const CloseAlert=(AlertMsg)=>{
+    document.getElementById(AlertMsg).style.display="none"
+    console.log(AlertMsg)
+}

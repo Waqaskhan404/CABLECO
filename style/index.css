@@ -197,6 +197,36 @@ p {
     margin: 1px;
     color: #fff;
 }
+.alert-msg{
+    display: flex;
+    position: absolute;
+    background-color: rgba(37, 45, 62, 0.9);
+    width: 84%;
+    z-index: 2;
+    padding: 7px;
+    top: 86px;
+}
+.alert-card-two{
+    left: 16px;
+}
+.card-two-exclimation{
+    margin-right: 5px;
+
+}
+.alert-x-mark{
+    margin-top: 4px;
+    color: #FF3366;
+    float: right;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.alert-msg p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
 .exclimation-mark{
     color: #fff;
     margin-top: 3px;
@@ -304,7 +334,7 @@ sup {
     left: 0;
     right: 0;
     top: 113px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .card-one-pop-one{
@@ -323,6 +353,12 @@ sup {
     font-weight: lighter;
     opacity: 0.7;
     padding-top: 0;
+}
+#alert-main{
+    display: none;
+}
+#alert-main-card-two{
+    display: none;
 }
 .x-mark{
     color: #fff;

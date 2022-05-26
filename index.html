@@ -64,15 +64,22 @@
         <!-- Card Section Start  -->
         <div class="card-main-container">
           <div class="card-main-inner">
-            <div class="card-one" onclick="ShowPopupMain('card-one-pup-main')">
-              <div class="card-one-upper">
-                <div class="three-dots">
+            <div class="card-one" >
+              <div class="card-one-upper" onclick="OpenAlert('alert-main')">
+                <div class="three-dots" >
                   <span
                     ><i class="fa-solid three-dots-icon fa-ellipsis"></i
                   ></span>
                 </div>
               </div>
-              <div class="card-one-middle">
+              <div class="alert-main" id="alert-main">
+              <div class="alert-msg" >
+                <p>Indicates average performance in courses that are passed by team members</p>
+                <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main')"></i>
+            </div> 
+        </div>
+            <div onclick="ShowPopupMain('card-one-pup-main')">
+              <div class="card-one-middle" >
                 <div class="card-one-middle-inner">
                   <h6>Course Performance</h6>
                   <h5>
@@ -99,6 +106,7 @@
                 </div>
               </div>
             </div>
+        </div>
             <div class="card-one-pop-up" id="card-one-pup-main">
               <div class="card-one-pop-one">
                 <h6>Course Performance</h6>
@@ -363,17 +371,24 @@
             </div>
           </div>
           <div class="card-main-inner">
-            <div class="card-one" onclick="ShowPopupMain('card-two-pup-main')">
-              <div class="card-one-upper">
+            <div class="card-one" >
+              <div class="card-one-upper" onclick="OpenAlert('alert-main-card-two')">
                 <div class="three-dots">
                   <span
                     ><i class="fa-solid three-dots-icon fa-ellipsis"></i
                   ></span>
                 </div>
-                <div class="exclimation-mark">
+                <div class="exclimation-mark card-two-exclimation">
                   <i class="fa fa-exclamation-triangle"></i>
                 </div>
               </div>
+              <div class="alert-main" id="alert-main-card-two">
+                <div class="alert-msg alert-card-two" >
+                  <p>Indicates average performance in courses that are passed by team members</p>
+                  <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-two')"></i>
+              </div> 
+          </div>
+              <div onclick="ShowPopupMain('card-two-pup-main')">
               <div class="card-one-middle">
                 <div class="card-one-middle-inner">
                   <h6>Certification Performance</h6>
@@ -400,6 +415,7 @@
                   <img src="./images/arrow_down.png" />
                 </div>
               </div>
+            </div>
             </div>
             <div class="card-one-pop-up card-two" id="card-two-pup-main">
               <div class="card-one-pop-one" id="section-one">
@@ -681,6 +697,7 @@
                   <i class="fa fa-exclamation-triangle"></i>
                 </div>
               </div>
+              <div onclick="ShowPopupMain('card-two-pup-main')">
               <div class="card-one-middle">
                 <div class="card-one-middle-inner third-heading">
                   <h6 >Courses - Completion Rate</h6>
@@ -707,6 +724,7 @@
                   <img src="./images/arrow_down.png" />
                 </div>
               </div>
+            </div>
             </div>
             <div class="card-one-pop-up card-three" id="card-three-pup-main">
               <div class="card-one-pop-one" id="section-card-three-one">
@@ -982,6 +1000,7 @@
                   ></span>
                 </div>
               </div>
+              <div onclick="ShowPopupMain('card-two-pup-main')">
               <div class="card-one-middle">
                 <div class="card-one-middle-inner forth-card-heading">
                   <h6>Course Pass Rate</h6>
@@ -1008,6 +1027,7 @@
                   <img src="./images/arrow_up.png" />
                 </div>
               </div>
+            </div>
             </div>
             <div class="card-one-pop-up card-four" id="card-four-pup-main">
               <div class="card-one-pop-one" id="section-card-four-one">
@@ -1276,7 +1296,7 @@
             </div>
           </div>
           <div class="card-main-inner">
-            <div class="card-one" onclick="ShowPopupMain('card-five-pup-main')">
+            <div class="card-one" >
               <div class="card-one-upper">
                 <div class="three-dots">
                   <span
@@ -1287,6 +1307,7 @@
                   <i class="fa fa-exclamation-triangle"></i>
                 </div>
               </div>
+              <div   onclick="ShowPopupMain('card-five-pup-main')" > 
               <div class="card-one-middle">
                 <div class="card-one-middle-inner">
                   <h6>Course Fail Rate</h6>
@@ -1314,6 +1335,7 @@
                 </div>
               </div>
             </div>
+        </div>
             <div class="card-one-pop-up card-five" id="card-five-pup-main">
                 <div class="card-one-pop-one" id="section-card-five-one">
                   <h6>Course Performance</h6>
