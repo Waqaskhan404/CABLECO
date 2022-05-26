@@ -157,11 +157,41 @@ const CustomizeViewTwoThree=(CardOneCalenderOne,CardOneCalenderTwo,CardOneTopThr
 
 }
 
-const OpenAlert=(AlertMsg)=>{
+const OpenAlert=(AlertMsg,AlertMsg2,AlertMsg3,AlertMsg4,AlertMsg5)=>{
     document.getElementById(AlertMsg).style.display="block"
-    console.log(AlertMsg)
+    document.getElementById(AlertMsg2).style.display="none"
+    document.getElementById(AlertMsg3).style.display="none"
+    document.getElementById(AlertMsg4).style.display="none"
+    document.getElementById(AlertMsg5).style.display="none"
+}
+const OpenAlertCardTwo=(AlertMsg,AlertMsg2,AlertMsg3,AlertMsg4,AlertMsg5)=>{
+    document.getElementById(AlertMsg).style.display="none"
+    document.getElementById(AlertMsg2).style.display="block"
+    document.getElementById(AlertMsg3).style.display="none"
+    document.getElementById(AlertMsg4).style.display="none"
+    document.getElementById(AlertMsg5).style.display="none"
+}
+const OpenAlertCardThree=(AlertMsg,AlertMsg2,AlertMsg3,AlertMsg4,AlertMsg5)=>{
+    document.getElementById(AlertMsg).style.display="none"
+    document.getElementById(AlertMsg2).style.display="none"
+    document.getElementById(AlertMsg3).style.display="block"
+    document.getElementById(AlertMsg4).style.display="none"
+    document.getElementById(AlertMsg5).style.display="none"
+}
+const OpenAlertCardFour=(AlertMsg,AlertMsg2,AlertMsg3,AlertMsg4,AlertMsg5)=>{
+    document.getElementById(AlertMsg).style.display="none"
+    document.getElementById(AlertMsg2).style.display="none"
+    document.getElementById(AlertMsg3).style.display="none"
+    document.getElementById(AlertMsg4).style.display="block"
+    document.getElementById(AlertMsg5).style.display="none"
+}
+const OpenAlertCardFive=(AlertMsg,AlertMsg2,AlertMsg3,AlertMsg4,AlertMsg5)=>{
+    document.getElementById(AlertMsg).style.display="none"
+    document.getElementById(AlertMsg2).style.display="none"
+    document.getElementById(AlertMsg3).style.display="none"
+    document.getElementById(AlertMsg4).style.display="none"
+    document.getElementById(AlertMsg5).style.display="block"
 }
 const CloseAlert=(AlertMsg)=>{
     document.getElementById(AlertMsg).style.display="none"
-    console.log(AlertMsg)
 }

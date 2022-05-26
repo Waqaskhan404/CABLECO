@@ -1,1611 +1,1526 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/index.css" />
     <title>Cable Co</title>
-  </head>
-  <body>
-    <section class="wrapper">
-      <!-- Hero Section Start -->
-      <section class="header-section-main">
-        <div class="header-container">
-          <div class="nav-container">
-            <div class="nav-left">
-              <div class="lift-inner-main">
-                <h1>Cable Co</h1>
-                <div class="poly-logo">
-                  <img src="./images/src.png" alt="Logo" />
-                </div>
-              </div>
-              <div>
-                <ul>
-                  <li class="active"><a>HOME</a></li>
-                  <li class="coursework"><a>COURSEWORK</a></li>
-                  <li class="certification"><a>CERTIFICATION</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav-middle">
-              <div class="middle-inner-main">
-                <div>
-                  <button class="btn dashborad-btn">Dashboard</button>
-                </div>
-                <ul>
-                  <li><a>Change Setting</a></li>
-                  <li><a>Export / Share</a></li>
-                  <li><a>Support / FAQs</a></li>
-                  <li><a>Log Out</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav-right">
-              <div class="right-inner-main">
-                <div><img src="./images/text.png" alt /></div>
-                <div>
-                  <p>Company View</p>
-                  <h4>Home</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Hero Section End -->
+</head>
 
-        <!-- Card Section Start  -->
-        <div class="card-main-container">
-          <div class="card-main-inner">
-            <div class="card-one" >
-              <div class="card-one-upper" onclick="OpenAlert('alert-main')">
-                <div class="three-dots" >
-                  <span
-                    ><i class="fa-solid three-dots-icon fa-ellipsis"></i
-                  ></span>
+<body>
+    <section class="wrapper">
+        <!-- Hero Section Start -->
+        <section class="header-section-main">
+            <div class="header-container">
+                <div class="nav-container">
+                    <div class="nav-left">
+                        <div class="lift-inner-main">
+                            <h1>Cable Co</h1>
+                            <div class="poly-logo">
+                                <img src="./images/src.png" alt="Logo" />
+                            </div>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="active"><a>HOME</a></li>
+                                <li class="coursework"><a>COURSEWORK</a></li>
+                                <li class="certification"><a>CERTIFICATION</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-middle">
+                        <div class="middle-inner-main">
+                            <div>
+                                <button class="btn dashborad-btn">Dashboard</button>
+                            </div>
+                            <ul>
+                                <li><a>Change Setting</a></li>
+                                <li><a>Export / Share</a></li>
+                                <li><a>Support / FAQs</a></li>
+                                <li><a>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="right-inner-main">
+                            <div><img src="./images/text.png" alt /></div>
+                            <div>
+                                <p>Company View</p>
+                                <h4>Home</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="alert-main" id="alert-main">
-              <div class="alert-msg" >
-                <p>Indicates average performance in courses that are passed by team members</p>
-                <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main')"></i>
-            </div> 
-        </div>
-            <div onclick="ShowPopupMain('card-one-pup-main')">
-              <div class="card-one-middle" >
-                <div class="card-one-middle-inner">
-                  <h6>Course Performance</h6>
-                  <h5>
-                    <sup class="plus">+</sup>
-                    <span class="zero">0</span>
-                    <span class="point">.1</span>
-                    <sup class="percentage">%</sup>
-                  </h5>
-                </div>
-              </div>
-              <div class="card-one-second-last">
-                <h5>
-                  <span class="number">87</span>
-                  <span class="point-seond">.9</span>
-                  <sup class="pertage-second">%</sup>
-                </h5>
-              </div>
-              <div class="card-one-bottom">
-                <div>
-                  <p>Company Avg Score vs Others</p>
-                </div>
-                <div>
-                  <img src="./images/arrow_up.png" />
-                </div>
-              </div>
             </div>
-        </div>
-            <div class="card-one-pop-up" id="card-one-pup-main">
-              <div class="card-one-pop-one">
-                <h6>Course Performance</h6>
-                <i
-                  onclick="CloseAll('card-one-pup-main')"
-                  class="fa-solid fa-xmark x-mark"
-                ></i>
-              </div>
-              <div class="card-one-pop-two">
-                <div
-                  class="card-one-pop-two-inner"
-                  onclick="ShowCalenderOne('card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-top-seven','card-one-view-map','card-one-pup-main')"
-                >
-                  <p>Period Begins</p>
-                  <p>10/15/17</p>
-                </div>
-              </div>
-              <div class="calender" id="card-one-calender-one"></div>
-              <div class="card-one-pop-three">
-                <div
-                  class="card-one-pop-three-inner"
-                  onclick="ShowCalenderTwo('card-one-calender-two','card-one-calender-one','card-one-top-three','card-one-top-seven','card-one-view-map','card-one-pup-main')"
-                >
-                  <p>Period Ends</p>
-                  <p>10/15/18</p>
-                </div>
-              </div>
-              <div class="calender" id="card-one-calender-two"></div>
-              <div
-                class="card-one-pop-four"
-                onclick="ShowTopThree('card-one-top-three','card-one-calender-one','card-one-calender-two','card-one-view-map','card-one-pup-main')"
-              >
-                <p>Top Performers</p>
-              </div>
-              <div class="top-three-performer" id="card-one-top-three">
-                <ul>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
+            <!-- Hero Section End -->
+
+            <!-- Card Section Start  -->
+            <div class="card-main-container">
+                <div class="card-main-inner">
+                    <div class="card-one">
+                        <div class="card-one-upper" onclick="OpenAlert('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                            <div class="three-dots">
+                                <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
+                            </div>
                         </div>
-                      </div>
+                        <div class="alert-main" id="alert-main">
+                            <div class="alert-msg">
+                                <p>Indicates average performance in courses that are passed by team members</p>
+                                <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main')"></i>
+                            </div>
+                        </div>
+                        <div onclick="ShowPopupMain('card-one-pup-main')">
+                            <div class="card-one-middle">
+                                <div class="card-one-middle-inner">
+                                    <h6>Course Performance</h6>
+                                    <h5>
+                                        <sup class="plus">+</sup>
+                                        <span class="zero">0</span>
+                                        <span class="point">.1</span>
+                                        <sup class="percentage">%</sup>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-one-second-last">
+                                <h5>
+                                    <span class="number">87</span>
+                                    <span class="point-seond">.9</span>
+                                    <sup class="pertage-second">%</sup>
+                                </h5>
+                            </div>
+                            <div class="card-one-bottom">
+                                <div>
+                                    <p>Company Avg Score vs Others</p>
+                                </div>
+                                <div>
+                                    <img src="./images/arrow_up.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
+                    <div class="card-one-pop-up" id="card-one-pup-main">
+                        <div class="card-one-pop-one">
+                            <h6>Course Performance</h6>
+                            <i onclick="CloseAll('card-one-pup-main')" class="fa-solid fa-xmark x-mark"></i>
                         </div>
-                      </div>
+                        <div class="card-one-pop-two">
+                            <div class="card-one-pop-two-inner"
+                                onclick="ShowCalenderOne('card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-top-seven','card-one-view-map','card-one-pup-main')">
+                                <p>Period Begins</p>
+                                <p>10/15/17</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-one-calender-one"></div>
+                        <div class="card-one-pop-three">
+                            <div class="card-one-pop-three-inner"
+                                onclick="ShowCalenderTwo('card-one-calender-two','card-one-calender-one','card-one-top-three','card-one-top-seven','card-one-view-map','card-one-pup-main')">
+                                <p>Period Ends</p>
+                                <p>10/15/18</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-one-calender-two"></div>
+                        <div class="card-one-pop-four"
+                            onclick="ShowTopThree('card-one-top-three','card-one-calender-one','card-one-calender-two','card-one-view-map','card-one-pup-main')">
+                            <p>Top Performers</p>
+                        </div>
+                        <div class="top-three-performer" id="card-one-top-three">
+                            <ul>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="card-one-top-seven" id="card-one-top-seven">
+                                    <ul>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="profile-list view-all-top"
+                                            onclick="ShowTopSeven('card-one-top-seven')">
+                                            <div class="profile-pic smile-face">
+                                                <img src="./images/download.png" alt="profile-logo" />
+                                            </div>
+                                            <div class="name">
+                                                <p class="txt">View All Top Performer</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-one-pop-five"
+                            onclick="ViewMap('card-one-view-map','card-one-pup-main','card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-top-seven')">
+                            <ul>
+                                <li>Chart View</li>
+                            </ul>
+                        </div>
+                        <div class="view-map" id="card-one-view-map">
+                            <ul>
+                                <li>
+                                    <span>10/15/17</span>
+                                    <span>10/15/18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-one-pop-six"
+                            onclick="CustomizeView('card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-view-map','card-one-pup-main')">
+                            <ul>
+                                <li>Customize My Views</li>
+                            </ul>
+                        </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div>
-                  <div class="card-one-top-seven" id="card-one-top-seven">
-                    <ul>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <ul>
-                    <li>
-                      <div
-                        class="profile-list view-all-top"
-                        onclick="ShowTopSeven('card-one-top-seven')"
-                      >
-                        <div class="profile-pic smile-face">
-                          <img src="./images/download.png" alt="profile-logo" />
-                        </div>
-                        <div class="name">
-                          <p class="txt">View All Top Performer</p>
-                        </div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div
-                class="card-one-pop-five"
-                onclick="ViewMap('card-one-view-map','card-one-pup-main','card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-top-seven')"
-              >
-                <ul>
-                  <li>Chart View</li>
-                </ul>
-              </div>
-              <div class="view-map" id="card-one-view-map">
-                <ul>
-                  <li>
-                    <span>10/15/17</span>
-                    <span>10/15/18</span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="card-one-pop-six"
-                onclick="CustomizeView('card-one-calender-one','card-one-calender-two','card-one-top-three','card-one-view-map','card-one-pup-main')"
-              >
-                <ul>
-                  <li>Customize My Views</li>
-                </ul>
-              </div>
+                <div class="card-main-inner">
+                    <div class="card-one">
+                        <div class="card-one-upper" onclick="OpenAlertCardTwo('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                            <div class="three-dots">
+                                <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
+                            </div>
+                            <div class="exclimation-mark card-two-exclimation">
+                                <i class="fa fa-exclamation-triangle"></i>
+                            </div>
+                        </div>
+                        <div class="alert-main" id="alert-main-card-two">
+                            <div class="alert-msg alert-card-two">
+                                <p>Certifications completed from within total certifications attempted by team members of this company.</p>
+                                <i class="fa-solid fa-xmark alert-x-mark"
+                                    onclick="CloseAlert('alert-main-card-two')"></i>
+                            </div>
+                        </div>
+                        <div onclick="ShowPopupMain('card-two-pup-main')">
+                            <div class="card-one-middle">
+                                <div class="card-one-middle-inner">
+                                    <h6>Certification Performance</h6>
+                                    <h5>
+                                        <sup class="plus">-</sup>
+                                        <span class="zero">2</span>
+                                        <span class="point">.1</span>
+                                        <sup class="percentage">%</sup>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-one-second-last">
+                                <h5>
+                                    <span class="number">78</span>
+                                    <span class="point-seond">.6</span>
+                                    <sup class="pertage-second">%</sup>
+                                </h5>
+                            </div>
+                            <div class="card-one-bottom">
+                                <div>
+                                    <p>Company Avg Score vs Others</p>
+                                </div>
+                                <div>
+                                    <img src="./images/arrow_down.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-one-pop-up card-two" id="card-two-pup-main">
+                        <div class="card-one-pop-one" id="section-one">
+                            <h6>Course Performance</h6>
+                            <i onclick="CloseAll('card-two-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                        </div>
+                        <div class="card-one-pop-two" id="section-two">
+                            <div class="card-one-pop-two-inner"
+                                onclick="ShowCalenderTwoThree('card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-top-seven','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')">
+                                <p>Period Begins</p>
+                                <p>10/15/17</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-two-calender-one"></div>
+                        <div class="card-one-pop-three" id="section-three">
+                            <div class="card-one-pop-three-inner"
+                                onclick="ShowCalenderTwoTwohree('card-two-calender-two','card-two-calender-one','card-two-top-three','card-two-top-seven','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')">
+                                <p>Period Ends</p>
+                                <p>10/15/18</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-two-calender-two"></div>
+                        <div class="card-one-pop-four" id="section-four"
+                            onclick="ShowTopThreeTwoThree('card-two-top-three','card-two-calender-one','card-two-calender-two','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')">
+                            <p>Top Performers</p>
+                        </div>
+                        <div class="top-three-performer" id="card-two-top-three">
+                            <ul>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="card-one-top-seven" id="card-two-top-seven">
+                                    <ul>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="profile-list view-all-top"
+                                            onclick="ShowTopSeven('card-two-top-seven')">
+                                            <div class="profile-pic smile-face">
+                                                <img src="./images/download.png" alt="profile-logo" />
+                                            </div>
+                                            <div class="name">
+                                                <p class="txt">View All Top Performer</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-one-pop-five"
+                            onclick="ViewMapTwoThree('card-two-view-map','card-two-pup-main','card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-top-seven','section-one','section-two','section-three','section-four','section-five')">
+                            <ul>
+                                <li>Chart View</li>
+                            </ul>
+                        </div>
+                        <div class="view-map" id="card-two-view-map">
+                            <ul>
+                                <li>
+                                    <span>10/15/17</span>
+                                    <span>10/15/18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-one-pop-six" id="section-five"
+                            onclick="CustomizeViewTwoThree('card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')">
+                            <ul>
+                                <li>Customize My Views</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-main-inner">
+                    <div class="card-one" >
+                        <div class="card-one-upper" onclick="OpenAlertCardThree('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                            <div class="three-dots">
+                                <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
+                            </div>
+                            <div class="exclimation-mark">
+                                <i class="fa fa-exclamation-triangle"></i>
+                            </div>
+                        </div>
+                        <div class="alert-main" id="alert-main-card-three">
+                            <div class="alert-msg alert-card-two" >
+                              <p>Courses completed from within total courses attempted by team members of this company.</p>
+                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-three')"></i>
+                          </div> 
+                      </div>
+                        <div onclick="ShowPopupMain('card-three-pup-main')">
+                            <div class="card-one-middle">
+                                <div class="card-one-middle-inner third-heading">
+                                    <h6>Courses - Completion Rate</h6>
+                                    <h5>
+                                        <sup class="plus">-</sup>
+                                        <span class="zero">8</span>
+                                        <span class="point">.63</span>
+                                        <sup class="percentage">%</sup>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-one-second-last">
+                                <h5>
+                                    <span class="number">30</span>
+                                    <span class="point-seond">.16</span>
+                                    <sup class="pertage-second">%</sup>
+                                </h5>
+                            </div>
+                            <div class="card-one-bottom">
+                                <div>
+                                    <p>Company Completion Rate vs Others</p>
+                                </div>
+                                <div>
+                                    <img src="./images/arrow_down.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-one-pop-up card-three" id="card-three-pup-main">
+                        <div class="card-one-pop-one" id="section-card-three-one">
+                            <h6>Course Performance</h6>
+                            <i onclick="CloseAll('card-three-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                        </div>
+                        <div class="card-one-pop-two" id="section-card-three-two">
+                            <div class="card-one-pop-two-inner"
+                                onclick="ShowCalenderTwoThree('card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-top-seven','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
+                                <p>Period Begins</p>
+                                <p>10/15/17</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-three-calender-one"></div>
+                        <div class="card-one-pop-three" id="section-card-three-three">
+                            <div class="card-one-pop-three-inner"
+                                onclick="ShowCalenderTwoTwohree('card-three-calender-two','card-three-calender-one','card-three-top-three','card-three-top-seven','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
+                                <p>Period Ends</p>
+                                <p>10/15/18</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-three-calender-two"></div>
+                        <div class="card-one-pop-four" id="section-card-three-four"
+                            onclick="ShowTopThreeTwoThree('card-three-top-three','card-three-calender-one','card-three-calender-two','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
+                            <p>Top Performers</p>
+                        </div>
+                        <div class="top-three-performer" id="card-three-top-three">
+                            <ul>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="card-one-top-seven" id="card-three-top-seven">
+                                    <ul>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="profile-list view-all-top"
+                                            onclick="ShowTopSeven('card-three-top-seven')">
+                                            <div class="profile-pic smile-face">
+                                                <img src="./images/download.png" alt="profile-logo" />
+                                            </div>
+                                            <div class="name">
+                                                <p class="txt">View All Top Performer</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-one-pop-five"
+                            onclick="ViewMapTwoThree('card-three-view-map','card-three-pup-main','card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-top-seven','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
+                            <ul>
+                                <li>Chart View</li>
+                            </ul>
+                        </div>
+                        <div class="view-map" id="card-three-view-map">
+                            <ul>
+                                <li>
+                                    <span>10/15/17</span>
+                                    <span>10/15/18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-one-pop-six" id="section-card-three-five"
+                            onclick="CustomizeViewTwoThree('card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
+                            <ul>
+                                <li>Customize My Views</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-main-inner">
+                    <div class="card-one">
+                        <div class="card-one-upper">
+                            <div class="three-dots" onclick="OpenAlertCardFour('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                                <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
+                            </div>
+                        </div>
+                        <div class="alert-main" id="alert-main-card-four">
+                            <div class="alert-msg alert-card-two" >
+                              <p>Percentage of courses passed against courses attempted.</p>
+                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-four')"></i>
+                          </div> 
+                      </div>
+                        <div onclick="ShowPopupMain('card-four-pup-main')")">
+                            <div class="card-one-middle">
+                                <div class="card-one-middle-inner forth-card-heading">
+                                    <h6>Course Pass Rate</h6>
+                                    <h5>
+                                        <sup class="plus">+</sup>
+                                        <span class="zero">3</span>
+                                        <span class="point">.41</span>
+                                        <sup class="percentage">%</sup>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-one-second-last">
+                                <h5>
+                                    <span class="number">98</span>
+                                    <span class="point-seond">.41</span>
+                                    <sup class="pertage-second">%</sup>
+                                </h5>
+                            </div>
+                            <div class="card-one-bottom">
+                                <div>
+                                    <p> Company Pass Rate vs Others</p>
+                                </div>
+                                <div>
+                                    <img src="./images/arrow_up.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-one-pop-up card-four" id="card-four-pup-main">
+                        <div class="card-one-pop-one" id="section-card-four-one">
+                            <h6>Course Performance</h6>
+                            <i onclick="CloseAll('card-four-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                        </div>
+                        <div class="card-one-pop-two" id="section-card-four-two">
+                            <div class="card-one-pop-two-inner"
+                                onclick="ShowCalenderTwoThree('card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-top-seven','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')">
+                                <p>Period Begins</p>
+                                <p>10/15/17</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-four-calender-one"></div>
+                        <div class="card-one-pop-three" id="section-card-four-three">
+                            <div class="card-one-pop-three-inner"
+                                onclick="ShowCalenderTwoTwohree('card-four-calender-two','card-four-calender-one','card-four-top-three','card-four-top-seven','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')">
+                                <p>Period Ends</p>
+                                <p>10/15/18</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-four-calender-two"></div>
+                        <div class="card-one-pop-four" id="section-card-four-four"
+                            onclick="ShowTopThreeTwoThree('card-four-top-three','card-four-calender-one','card-four-calender-two','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')">
+                            <p>Top Performers</p>
+                        </div>
+                        <div class="top-three-performer" id="card-four-top-three">
+                            <ul>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="card-one-top-seven" id="card-four-top-seven">
+                                    <ul>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="profile-list view-all-top"
+                                            onclick="ShowTopSeven('card-four-top-seven')">
+                                            <div class="profile-pic smile-face">
+                                                <img src="./images/download.png" alt="profile-logo" />
+                                            </div>
+                                            <div class="name">
+                                                <p class="txt">View All Top Performer</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-one-pop-five" id="section-six"
+                            onclick="ViewMapFourFive('card-four-view-map','card-four-pup-main','card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-top-seven','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five','section-six')">
+                            <ul>
+                                <li>Chart View</li>
+                            </ul>
+                        </div>
+                        <div class="view-map" id="card-four-view-map">
+                            <ul>
+                                <li>
+                                    <span>10/15/17</span>
+                                    <span>10/15/18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-one-pop-six" id="section-card-four-five"
+                            onclick="CustomizeViewTwoThree('card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')">
+                            <ul>
+                                <li>Customize My Views</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-main-inner">
+                    <div class="card-one">
+                        <div class="card-one-upper">
+                            <div class="three-dots" onclick="OpenAlertCardFive('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                                <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
+                            </div>
+                            <div class="exclimation-mark">
+                                <i class="fa fa-exclamation-triangle"></i>
+                            </div>
+                        </div>
+                        <div class="alert-main" id="alert-main-card-five">
+                            <div class="alert-msg alert-card-two" >
+                              <p>Percentage of courses failed against courses attempted.</p>
+                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-five')"></i>
+                          </div> 
+                      </div>
+                        <div onclick="ShowPopupMain('card-five-pup-main')">
+                            <div class="card-one-middle">
+                                <div class="card-one-middle-inner">
+                                    <h6>Course Fail Rate</h6>
+                                    <h5>
+                                        <sup class="plus">-</sup>
+                                        <span class="zero">3</span>
+                                        <span class="point">.43</span>
+                                        <sup class="percentage">%</sup>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="card-one-second-last">
+                                <h5>
+                                    <span class="number">1</span>
+                                    <span class="point-seond">.57</span>
+                                    <sup class="pertage-second">%</sup>
+                                </h5>
+                            </div>
+                            <div class="card-one-bottom">
+                                <div>
+                                    <p>Company Fail vs Others</p>
+                                </div>
+                                <div>
+                                    <img src="./images/arrow_down.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-one-pop-up card-five" id="card-five-pup-main">
+                        <div class="card-one-pop-one" id="section-card-five-one">
+                            <h6>Course Performance</h6>
+                            <i onclick="CloseAll('card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                        </div>
+                        <div class="card-one-pop-two" id="section-card-five-two">
+                            <div class="card-one-pop-two-inner"
+                                onclick="ShowCalenderTwoThree('card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-top-seven','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')">
+                                <p>Period Begins</p>
+                                <p>10/15/17</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-five-calender-one"></div>
+                        <div class="card-one-pop-three" id="section-card-five-three">
+                            <div class="card-one-pop-three-inner"
+                                onclick="ShowCalenderTwoTwohree('card-five-calender-two','card-five-calender-one','card-five-top-three','card-five-top-seven','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')">
+                                <p>Period Ends</p>
+                                <p>10/15/18</p>
+                            </div>
+                        </div>
+                        <div class="calender" id="card-five-calender-two"></div>
+                        <div class="card-one-pop-four" id="section-card-five-four"
+                            onclick="ShowTopThreeTwoThree('card-five-top-three','card-five-calender-one','card-five-calender-two','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')">
+                            <p>Top Performers</p>
+                        </div>
+                        <div class="top-three-performer" id="card-five-top-three">
+                            <ul>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile-list">
+                                        <div class="profile-pic">
+                                            <img src="./images/profile.png" alt="profile-logo" />
+                                        </div>
+                                        <div class="name">
+                                            <p class="txt">Ryan Grubb</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="card-one-top-seven" id="card-five-top-seven">
+                                    <ul>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile-list">
+                                                <div class="profile-pic">
+                                                    <img src="./images/profile.png" alt="profile-logo" />
+                                                </div>
+                                                <div class="name">
+                                                    <p class="txt">Ryan Grubb</p>
+                                                </div>
+                                                <div>
+                                                    <div>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="profile-list view-all-top"
+                                            onclick="ShowTopSeven('card-five-top-seven')">
+                                            <div class="profile-pic smile-face">
+                                                <img src="./images/download.png" alt="profile-logo" />
+                                            </div>
+                                            <div class="name">
+                                                <p class="txt">View All Top Performer</p>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-one-pop-five" id="section-five-six"
+                            onclick="ViewMapFourFive('card-five-view-map','card-five-pup-main','card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-top-seven','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five','section-five-six')">
+                            <ul>
+                                <li>Chart View</li>
+                            </ul>
+                        </div>
+                        <div class="view-map" id="card-five-view-map">
+                            <ul>
+                                <li>
+                                    <span>10/15/17</span>
+                                    <span>10/15/18</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-one-pop-six" id="section-card-five-five"
+                            onclick="CustomizeViewTwoThree('card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')">
+                            <ul>
+                                <li>Customize My Views</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card-main-inner">
-            <div class="card-one" >
-              <div class="card-one-upper" onclick="OpenAlert('alert-main-card-two')">
-                <div class="three-dots">
-                  <span
-                    ><i class="fa-solid three-dots-icon fa-ellipsis"></i
-                  ></span>
-                </div>
-                <div class="exclimation-mark card-two-exclimation">
-                  <i class="fa fa-exclamation-triangle"></i>
-                </div>
-              </div>
-              <div class="alert-main" id="alert-main-card-two">
-                <div class="alert-msg alert-card-two" >
-                  <p>Indicates average performance in courses that are passed by team members</p>
-                  <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-two')"></i>
-              </div> 
-          </div>
-              <div onclick="ShowPopupMain('card-two-pup-main')">
-              <div class="card-one-middle">
-                <div class="card-one-middle-inner">
-                  <h6>Certification Performance</h6>
-                  <h5>
-                    <sup class="plus">-</sup>
-                    <span class="zero">2</span>
-                    <span class="point">.1</span>
-                    <sup class="percentage">%</sup>
-                  </h5>
-                </div>
-              </div>
-              <div class="card-one-second-last">
-                <h5>
-                  <span class="number">78</span>
-                  <span class="point-seond">.6</span>
-                  <sup class="pertage-second">%</sup>
-                </h5>
-              </div>
-              <div class="card-one-bottom">
-                <div>
-                  <p>Company Avg Score vs Others</p>
-                </div>
-                <div>
-                  <img src="./images/arrow_down.png" />
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card-one-pop-up card-two" id="card-two-pup-main">
-              <div class="card-one-pop-one" id="section-one">
-                <h6>Course Performance</h6>
-                <i
-                  onclick="CloseAll('card-two-pup-main')"
-                  class="fa-solid fa-xmark x-mark"
-                ></i>
-              </div>
-              <div class="card-one-pop-two" id="section-two">
-                <div
-                  class="card-one-pop-two-inner"
-                  onclick="ShowCalenderTwoThree('card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-top-seven','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')"
-                >
-                  <p>Period Begins</p>
-                  <p>10/15/17</p>
-                </div>
-              </div>
-              <div class="calender" id="card-two-calender-one"></div>
-              <div class="card-one-pop-three" id="section-three">
-                <div
-                  class="card-one-pop-three-inner"
-                  onclick="ShowCalenderTwoTwohree('card-two-calender-two','card-two-calender-one','card-two-top-three','card-two-top-seven','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')"
-                >
-                  <p>Period Ends</p>
-                  <p>10/15/18</p>
-                </div>
-              </div>
-              <div class="calender" id="card-two-calender-two"></div>
-              <div
-                class="card-one-pop-four"
-                id="section-four"
-                onclick="ShowTopThreeTwoThree('card-two-top-three','card-two-calender-one','card-two-calender-two','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')"
-              >
-                <p>Top Performers</p>
-              </div>
-              <div class="top-three-performer" id="card-two-top-three">
-                <ul>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div>
-                  <div class="card-one-top-seven" id="card-two-top-seven">
-                    <ul>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <ul>
-                    <li>
-                      <div
-                        class="profile-list view-all-top"
-                        onclick="ShowTopSeven('card-two-top-seven')"
-                      >
-                        <div class="profile-pic smile-face">
-                          <img src="./images/download.png" alt="profile-logo" />
-                        </div>
-                        <div class="name">
-                          <p class="txt">View All Top Performer</p>
-                        </div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card-one-pop-five"
-                onclick="ViewMapTwoThree('card-two-view-map','card-two-pup-main','card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-top-seven','section-one','section-two','section-three','section-four','section-five')"
-              >
-                <ul>
-                  <li>Chart View</li>
-                </ul>
-              </div>
-              <div class="view-map" id="card-two-view-map">
-                <ul>
-                  <li>
-                    <span>10/15/17</span>
-                    <span>10/15/18</span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="card-one-pop-six"
-                id="section-five"
-                onclick="CustomizeViewTwoThree('card-two-calender-one','card-two-calender-two','card-two-top-three','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')"
-              >
-                <ul>
-                  <li>Customize My Views</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-main-inner">
-            <div
-              class="card-one"
-              onclick="ShowPopupMain('card-three-pup-main')"
-            >
-              <div class="card-one-upper">
-                <div class="three-dots">
-                  <span
-                    ><i class="fa-solid three-dots-icon fa-ellipsis"></i
-                  ></span>
-                </div>
-                <div class="exclimation-mark">
-                  <i class="fa fa-exclamation-triangle"></i>
-                </div>
-              </div>
-              <div onclick="ShowPopupMain('card-two-pup-main')">
-              <div class="card-one-middle">
-                <div class="card-one-middle-inner third-heading">
-                  <h6 >Courses - Completion Rate</h6>
-                  <h5>
-                    <sup class="plus">-</sup>
-                    <span class="zero">8</span>
-                    <span class="point">.63</span>
-                    <sup class="percentage">%</sup>
-                  </h5>
-                </div>
-              </div>
-              <div class="card-one-second-last">
-                <h5>
-                  <span class="number">30</span>
-                  <span class="point-seond">.16</span>
-                  <sup class="pertage-second">%</sup>
-                </h5>
-              </div>
-              <div class="card-one-bottom">
-                <div>
-                  <p>Company Completion Rate vs Others</p>
-                </div>
-                <div>
-                  <img src="./images/arrow_down.png" />
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card-one-pop-up card-three" id="card-three-pup-main">
-              <div class="card-one-pop-one" id="section-card-three-one">
-                <h6>Course Performance</h6>
-                <i
-                  onclick="CloseAll('card-three-pup-main')"
-                  class="fa-solid fa-xmark x-mark"
-                ></i>
-              </div>
-              <div class="card-one-pop-two" id="section-card-three-two">
-                <div
-                  class="card-one-pop-two-inner"
-                  onclick="ShowCalenderTwoThree('card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-top-seven','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')"
-                >
-                  <p>Period Begins</p>
-                  <p>10/15/17</p>
-                </div>
-              </div>
-              <div class="calender" id="card-three-calender-one"></div>
-              <div class="card-one-pop-three" id="section-card-three-three">
-                <div
-                  class="card-one-pop-three-inner"
-                  onclick="ShowCalenderTwoTwohree('card-three-calender-two','card-three-calender-one','card-three-top-three','card-three-top-seven','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')"
-                >
-                  <p>Period Ends</p>
-                  <p>10/15/18</p>
-                </div>
-              </div>
-              <div class="calender" id="card-three-calender-two"></div>
-              <div
-                class="card-one-pop-four"
-                id="section-card-three-four"
-                onclick="ShowTopThreeTwoThree('card-three-top-three','card-three-calender-one','card-three-calender-two','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')"
-              >
-                <p>Top Performers</p>
-              </div>
-              <div class="top-three-performer" id="card-three-top-three">
-                <ul>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div>
-                  <div class="card-one-top-seven" id="card-three-top-seven">
-                    <ul>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <ul>
-                    <li>
-                      <div
-                        class="profile-list view-all-top"
-                        onclick="ShowTopSeven('card-three-top-seven')"
-                      >
-                        <div class="profile-pic smile-face">
-                          <img src="./images/download.png" alt="profile-logo" />
-                        </div>
-                        <div class="name">
-                          <p class="txt">View All Top Performer</p>
-                        </div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card-one-pop-five"
-                onclick="ViewMapTwoThree('card-three-view-map','card-three-pup-main','card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-top-seven','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')"
-              >
-                <ul>
-                  <li>Chart View</li>
-                </ul>
-              </div>
-              <div class="view-map" id="card-three-view-map">
-                <ul>
-                  <li>
-                    <span>10/15/17</span>
-                    <span>10/15/18</span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="card-one-pop-six"
-                id="section-card-three-five"
-                onclick="CustomizeViewTwoThree('card-three-calender-one','card-three-calender-two','card-three-top-three','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')"
-              >
-                <ul>
-                  <li>Customize My Views</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-main-inner">
-            <div class="card-one" onclick="ShowPopupMain('card-four-pup-main')">
-              <div class="card-one-upper">
-                <div class="three-dots">
-                  <span
-                    ><i class="fa-solid three-dots-icon fa-ellipsis"></i
-                  ></span>
-                </div>
-              </div>
-              <div onclick="ShowPopupMain('card-two-pup-main')">
-              <div class="card-one-middle">
-                <div class="card-one-middle-inner forth-card-heading">
-                  <h6>Course Pass Rate</h6>
-                  <h5>
-                    <sup class="plus">+</sup>
-                    <span class="zero">3</span>
-                    <span class="point">.41</span>
-                    <sup class="percentage">%</sup>
-                  </h5>
-                </div>
-              </div>
-              <div class="card-one-second-last">
-                <h5>
-                  <span class="number">98</span>
-                  <span class="point-seond">.41</span>
-                  <sup class="pertage-second">%</sup>
-                </h5>
-              </div>
-              <div class="card-one-bottom">
-                <div>
-                  <p> Company Pass Rate vs Others</p>
-                </div>
-                <div>
-                  <img src="./images/arrow_up.png" />
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card-one-pop-up card-four" id="card-four-pup-main">
-              <div class="card-one-pop-one" id="section-card-four-one">
-                <h6>Course Performance</h6>
-                <i
-                  onclick="CloseAll('card-four-pup-main')"
-                  class="fa-solid fa-xmark x-mark"
-                ></i>
-              </div>
-              <div class="card-one-pop-two" id="section-card-four-two">
-                <div
-                  class="card-one-pop-two-inner"
-                  onclick="ShowCalenderTwoThree('card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-top-seven','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')"
-                >
-                  <p>Period Begins</p>
-                  <p>10/15/17</p>
-                </div>
-              </div>
-              <div class="calender" id="card-four-calender-one"></div>
-              <div class="card-one-pop-three" id="section-card-four-three">
-                <div
-                  class="card-one-pop-three-inner"
-                  onclick="ShowCalenderTwoTwohree('card-four-calender-two','card-four-calender-one','card-four-top-three','card-four-top-seven','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')"
-                >
-                  <p>Period Ends</p>
-                  <p>10/15/18</p>
-                </div>
-              </div>
-              <div class="calender" id="card-four-calender-two"></div>
-              <div
-                class="card-one-pop-four"
-                id="section-card-four-four"
-                onclick="ShowTopThreeTwoThree('card-four-top-three','card-four-calender-one','card-four-calender-two','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')"
-              >
-                <p>Top Performers</p>
-              </div>
-              <div class="top-three-performer" id="card-four-top-three">
-                <ul>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="profile-list">
-                      <div class="profile-pic">
-                        <img src="./images/profile.png" alt="profile-logo" />
-                      </div>
-                      <div class="name"><p class="txt">Ryan Grubb</p></div>
-                      <div>
-                        <div>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div>
-                  <div class="card-one-top-seven" id="card-four-top-seven">
-                    <ul>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="profile-list">
-                          <div class="profile-pic">
-                            <img
-                              src="./images/profile.png"
-                              alt="profile-logo"
-                            />
-                          </div>
-                          <div class="name"><p class="txt">Ryan Grubb</p></div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <ul>
-                    <li>
-                      <div
-                        class="profile-list view-all-top"
-                        onclick="ShowTopSeven('card-four-top-seven')"
-                      >
-                        <div class="profile-pic smile-face">
-                          <img src="./images/download.png" alt="profile-logo" />
-                        </div>
-                        <div class="name">
-                          <p class="txt">View All Top Performer</p>
-                        </div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="card-one-pop-five"
-                id="section-six"
-                onclick="ViewMapFourFive('card-four-view-map','card-four-pup-main','card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-top-seven','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five','section-six')"
-              >
-                <ul>
-                  <li>Chart View</li>
-                </ul>
-              </div>
-              <div class="view-map" id="card-four-view-map">
-                <ul>
-                  <li>
-                    <span>10/15/17</span>
-                    <span>10/15/18</span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="card-one-pop-six"
-                id="section-card-four-five"
-                onclick="CustomizeViewTwoThree('card-four-calender-one','card-four-calender-two','card-four-top-three','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')"
-              >
-                <ul>
-                  <li>Customize My Views</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card-main-inner">
-            <div class="card-one" >
-              <div class="card-one-upper">
-                <div class="three-dots">
-                  <span
-                    ><i class="fa-solid three-dots-icon fa-ellipsis"></i
-                  ></span>
-                </div>
-                <div class="exclimation-mark">
-                  <i class="fa fa-exclamation-triangle"></i>
-                </div>
-              </div>
-              <div   onclick="ShowPopupMain('card-five-pup-main')" > 
-              <div class="card-one-middle">
-                <div class="card-one-middle-inner">
-                  <h6>Course Fail Rate</h6>
-                  <h5>
-                    <sup class="plus">-</sup>
-                    <span class="zero">3</span>
-                    <span class="point">.43</span>
-                    <sup class="percentage">%</sup>
-                  </h5>
-                </div>
-              </div>
-              <div class="card-one-second-last">
-                <h5>
-                  <span class="number">1</span>
-                  <span class="point-seond">.57</span>
-                  <sup class="pertage-second">%</sup>
-                </h5>
-              </div>
-              <div class="card-one-bottom">
-                <div>
-                  <p>Company Fail vs Others</p>
-                </div>
-                <div>
-                  <img src="./images/arrow_down.png" />
-                </div>
-              </div>
-            </div>
-        </div>
-            <div class="card-one-pop-up card-five" id="card-five-pup-main">
-                <div class="card-one-pop-one" id="section-card-five-one">
-                  <h6>Course Performance</h6>
-                  <i
-                    onclick="CloseAll('card-five-pup-main')"
-                    class="fa-solid fa-xmark x-mark"
-                  ></i>
-                </div>
-                <div class="card-one-pop-two" id="section-card-five-two">
-                  <div
-                    class="card-one-pop-two-inner"
-                    onclick="ShowCalenderTwoThree('card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-top-seven','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')"
-                  >
-                    <p>Period Begins</p>
-                    <p>10/15/17</p>
-                  </div>
-                </div>
-                <div class="calender" id="card-five-calender-one"></div>
-                <div class="card-one-pop-three" id="section-card-five-three">
-                  <div
-                    class="card-one-pop-three-inner"
-                    onclick="ShowCalenderTwoTwohree('card-five-calender-two','card-five-calender-one','card-five-top-three','card-five-top-seven','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')"
-                  >
-                    <p>Period Ends</p>
-                    <p>10/15/18</p>
-                  </div>
-                </div>
-                <div class="calender" id="card-five-calender-two"></div>
-                <div
-                  class="card-one-pop-four"
-                  id="section-card-five-four"
-                  onclick="ShowTopThreeTwoThree('card-five-top-three','card-five-calender-one','card-five-calender-two','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')"
-                >
-                  <p>Top Performers</p>
-                </div>
-                <div class="top-three-performer" id="card-five-top-three">
-                  <ul>
-                    <li>
-                      <div class="profile-list">
-                        <div class="profile-pic">
-                          <img src="./images/profile.png" alt="profile-logo" />
-                        </div>
-                        <div class="name"><p class="txt">Ryan Grubb</p></div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="profile-list">
-                        <div class="profile-pic">
-                          <img src="./images/profile.png" alt="profile-logo" />
-                        </div>
-                        <div class="name"><p class="txt">Ryan Grubb</p></div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="profile-list">
-                        <div class="profile-pic">
-                          <img src="./images/profile.png" alt="profile-logo" />
-                        </div>
-                        <div class="name"><p class="txt">Ryan Grubb</p></div>
-                        <div>
-                          <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div>
-                    <div class="card-one-top-seven" id="card-five-top-seven">
-                      <ul>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="profile-list">
-                            <div class="profile-pic">
-                              <img
-                                src="./images/profile.png"
-                                alt="profile-logo"
-                              />
-                            </div>
-                            <div class="name"><p class="txt">Ryan Grubb</p></div>
-                            <div>
-                              <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul>
-                      <li>
-                        <div
-                          class="profile-list view-all-top"
-                          onclick="ShowTopSeven('card-five-top-seven')"
-                        >
-                          <div class="profile-pic smile-face">
-                            <img src="./images/download.png" alt="profile-logo" />
-                          </div>
-                          <div class="name">
-                            <p class="txt">View All Top Performer</p>
-                          </div>
-                          <div>
-                            <div>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div
-                  class="card-one-pop-five"
-                  id="section-five-six"
-                  onclick="ViewMapFourFive('card-five-view-map','card-five-pup-main','card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-top-seven','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five','section-five-six')"
-                >
-                  <ul>
-                    <li>Chart View</li>
-                  </ul>
-                </div>
-                <div class="view-map" id="card-five-view-map">
-                  <ul>
-                    <li>
-                      <span>10/15/17</span>
-                      <span>10/15/18</span>
-                    </li>
-                  </ul>
-                </div>
-                <div
-                  class="card-one-pop-six"
-                  id="section-card-five-five"
-                  onclick="CustomizeViewTwoThree('card-five-calender-one','card-five-calender-two','card-five-top-three','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')"
-                >
-                  <ul>
-                    <li>Customize My Views</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-        </div>
-        <!-- Card Section End -->
-      </section>
+            <!-- Card Section End -->
+        </section>
     </section>
-  </body>
-  <script src="./js/index.js"></script>
+</body>
+<script src="./js/index.js"></script>
+
 </html>
