@@ -463,12 +463,6 @@ sup {
 .card-one-pop-six ul li{
     list-style: none;
 }
-.calender{
-    border: 1px white solid;
-    width: 251px;
-    height: 19px;
-    margin: 0px 13px;
-}
 .top-three-performer ul  .profile-pic{
     border-radius: 50%;
     width: 35px;
@@ -677,3 +671,63 @@ sup {
     display: none;
 }
 /* Card Section End */
+/* Calender */
+.calendar {
+    width: 284px;
+    min-height: 300px;
+    border: 1px solid #fff;
+  }
+  
+  .headline {
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  .headline .divider {
+    color: #ad0;
+  }
+  .headline .year {
+    color: #fff;
+  }
+  .headline .click-left,
+  .headline .click-right {
+    cursor: pointer;
+    position: absolute;
+  }
+  .headline .click-left {
+    left: 5px;
+  }
+  .headline .click-right {
+    right: 5px;
+  }
+  .weekdays,
+  .days {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .weekdays * {
+    width: 20px;
+    margin: 10px 8px;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+  }
+  .date {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 40px;
+    margin: 2px 8px;
+    color: #fff;
+    font-size: 13px;
+  }
+  .date.out-of-scope {
+    color: #fff;
+  }
+  .date.selected {
+    color: #ad0;
+    border: 1px solid #ad0;
+  }
+  /* Calender  End */
