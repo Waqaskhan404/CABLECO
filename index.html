@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css" />
     <title>Cable Co</title>
 </head>
@@ -63,7 +64,8 @@
             <div class="card-main-container">
                 <div class="card-main-inner">
                     <div class="card-one">
-                        <div class="card-one-upper" onclick="OpenAlert('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                        <div class="card-one-upper"
+                            onclick="OpenAlert('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
                             <div class="three-dots">
                                 <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
                             </div>
@@ -106,7 +108,8 @@
                     <div class="card-one-pop-up" id="card-one-pup-main">
                         <div class="card-one-pop-one">
                             <h6>Course Performance</h6>
-                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')"
+                                class="fa-solid fa-xmark x-mark"></i>
                         </div>
                         <div class="card-one-pop-two">
                             <div class="card-one-pop-two-inner"
@@ -118,24 +121,26 @@
                         <div id="card-one-calender-one">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px'
+                                            class='fas'>&#xf0d9;</i></i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-three">
                             <div class="card-one-pop-three-inner"
@@ -144,27 +149,29 @@
                                 <p>10/15/18</p>
                             </div>
                         </div>
-                        <div  id="card-one-calender-two">
+                        <div id="card-one-calender-two">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px'
+                                            class='fas'>&#xf0da;</i></i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-four"
                             onclick="ShowTopThree('card-one-top-three','card-one-calender-one','card-one-calender-two','card-one-view-map','card-one-pup-main')">
@@ -394,7 +401,8 @@
                 </div>
                 <div class="card-main-inner">
                     <div class="card-one">
-                        <div class="card-one-upper" onclick="OpenAlertCardTwo('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                        <div class="card-one-upper"
+                            onclick="OpenAlertCardTwo('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
                             <div class="three-dots">
                                 <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
                             </div>
@@ -404,7 +412,8 @@
                         </div>
                         <div class="alert-main" id="alert-main-card-two">
                             <div class="alert-msg alert-card-two">
-                                <p>Certifications completed from within total certifications attempted by team members of this company.</p>
+                                <p>Certifications completed from within total certifications attempted by team members
+                                    of this company.</p>
                                 <i class="fa-solid fa-xmark alert-x-mark"
                                     onclick="CloseAlert('alert-main-card-two')"></i>
                             </div>
@@ -441,7 +450,8 @@
                     <div class="card-one-pop-up card-two" id="card-two-pup-main">
                         <div class="card-one-pop-one" id="section-one">
                             <h6>Course Performance</h6>
-                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')"
+                                class="fa-solid fa-xmark x-mark"></i>
                         </div>
                         <div class="card-one-pop-two" id="section-two">
                             <div class="card-one-pop-two-inner"
@@ -450,27 +460,28 @@
                                 <p>10/15/17</p>
                             </div>
                         </div>
-                        <div  id="card-two-calender-one">
+                        <div id="card-two-calender-one">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-three" id="section-three">
                             <div class="card-one-pop-three-inner"
@@ -479,27 +490,29 @@
                                 <p>10/15/18</p>
                             </div>
                         </div>
-                        <div  id="card-two-calender-two">
+                        <div id="card-two-calender-two">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px'
+                                            class='fas'>&#xf0d9;</i></i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-four" id="section-four"
                             onclick="ShowTopThreeTwoThree('card-two-top-three','card-two-calender-one','card-two-calender-two','card-two-view-map','card-two-pup-main','section-one','section-two','section-three','section-four','section-five')">
@@ -728,8 +741,9 @@
                     </div>
                 </div>
                 <div class="card-main-inner">
-                    <div class="card-one" >
-                        <div class="card-one-upper" onclick="OpenAlertCardThree('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                    <div class="card-one">
+                        <div class="card-one-upper"
+                            onclick="OpenAlertCardThree('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
                             <div class="three-dots">
                                 <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
                             </div>
@@ -738,11 +752,13 @@
                             </div>
                         </div>
                         <div class="alert-main" id="alert-main-card-three">
-                            <div class="alert-msg alert-card-two" >
-                              <p>Courses completed from within total courses attempted by team members of this company.</p>
-                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-three')"></i>
-                          </div> 
-                      </div>
+                            <div class="alert-msg alert-card-two">
+                                <p>Courses completed from within total courses attempted by team members of this
+                                    company.</p>
+                                <i class="fa-solid fa-xmark alert-x-mark"
+                                    onclick="CloseAlert('alert-main-card-three')"></i>
+                            </div>
+                        </div>
                         <div onclick="ShowPopupMain('card-three-pup-main')">
                             <div class="card-one-middle">
                                 <div class="card-one-middle-inner third-heading">
@@ -775,7 +791,8 @@
                     <div class="card-one-pop-up card-three" id="card-three-pup-main">
                         <div class="card-one-pop-one" id="section-card-three-one">
                             <h6>Course Performance</h6>
-                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')"
+                                class="fa-solid fa-xmark x-mark"></i>
                         </div>
                         <div class="card-one-pop-two" id="section-card-three-two">
                             <div class="card-one-pop-two-inner"
@@ -787,24 +804,25 @@
                         <div id="card-three-calender-one">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-three" id="section-card-three-three">
                             <div class="card-one-pop-three-inner"
@@ -813,27 +831,28 @@
                                 <p>10/15/18</p>
                             </div>
                         </div>
-                        <div  id="card-three-calender-two">
+                        <div id="card-three-calender-two">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-four" id="section-card-three-four"
                             onclick="ShowTopThreeTwoThree('card-three-top-three','card-three-calender-one','card-three-calender-two','card-three-view-map','card-three-pup-main','section-card-three-one','section-card-three-two','section-card-three-three','section-card-three-four','section-card-three-five')">
@@ -1064,17 +1083,19 @@
                 <div class="card-main-inner">
                     <div class="card-one">
                         <div class="card-one-upper">
-                            <div class="three-dots" onclick="OpenAlertCardFour('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                            <div class="three-dots"
+                                onclick="OpenAlertCardFour('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
                                 <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
                             </div>
                         </div>
                         <div class="alert-main" id="alert-main-card-four">
-                            <div class="alert-msg alert-card-two" >
-                              <p>Percentage of courses passed against courses attempted.</p>
-                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-four')"></i>
-                          </div> 
-                      </div>
-                        <div onclick="ShowPopupMain('card-four-pup-main')")">
+                            <div class="alert-msg alert-card-two">
+                                <p>Percentage of courses passed against courses attempted.</p>
+                                <i class="fa-solid fa-xmark alert-x-mark"
+                                    onclick="CloseAlert('alert-main-card-four')"></i>
+                            </div>
+                        </div>
+                        <div onclick="ShowPopupMain('card-four-pup-main')" )">
                             <div class="card-one-middle">
                                 <div class="card-one-middle-inner forth-card-heading">
                                     <h6>Course Pass Rate</h6>
@@ -1106,7 +1127,8 @@
                     <div class="card-one-pop-up card-four" id="card-four-pup-main">
                         <div class="card-one-pop-one" id="section-card-four-one">
                             <h6>Course Performance</h6>
-                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')"
+                                class="fa-solid fa-xmark x-mark"></i>
                         </div>
                         <div class="card-one-pop-two" id="section-card-four-two">
                             <div class="card-one-pop-two-inner"
@@ -1118,24 +1140,25 @@
                         <div id="card-four-calender-one">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-three" id="section-card-four-three">
                             <div class="card-one-pop-three-inner"
@@ -1147,24 +1170,25 @@
                         <div id="card-four-calender-two">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-four" id="section-card-four-four"
                             onclick="ShowTopThreeTwoThree('card-four-top-three','card-four-calender-one','card-four-calender-two','card-four-view-map','card-four-pup-main','section-card-four-one','section-card-four-two','section-card-four-three','section-card-four-four','section-card-four-five')">
@@ -1395,7 +1419,8 @@
                 <div class="card-main-inner">
                     <div class="card-one">
                         <div class="card-one-upper">
-                            <div class="three-dots" onclick="OpenAlertCardFive('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
+                            <div class="three-dots"
+                                onclick="OpenAlertCardFive('alert-main','alert-main-card-two','alert-main-card-three','alert-main-card-four','alert-main-card-five')">
                                 <span><i class="fa-solid three-dots-icon fa-ellipsis"></i></span>
                             </div>
                             <div class="exclimation-mark">
@@ -1403,11 +1428,12 @@
                             </div>
                         </div>
                         <div class="alert-main" id="alert-main-card-five">
-                            <div class="alert-msg alert-card-two" >
-                              <p>Percentage of courses failed against courses attempted.</p>
-                              <i class="fa-solid fa-xmark alert-x-mark" onclick="CloseAlert('alert-main-card-five')"></i>
-                          </div> 
-                      </div>
+                            <div class="alert-msg alert-card-two">
+                                <p>Percentage of courses failed against courses attempted.</p>
+                                <i class="fa-solid fa-xmark alert-x-mark"
+                                    onclick="CloseAlert('alert-main-card-five')"></i>
+                            </div>
+                        </div>
                         <div onclick="ShowPopupMain('card-five-pup-main')">
                             <div class="card-one-middle">
                                 <div class="card-one-middle-inner">
@@ -1440,7 +1466,8 @@
                     <div class="card-one-pop-up card-five" id="card-five-pup-main">
                         <div class="card-one-pop-one" id="section-card-five-one">
                             <h6>Course Performance</h6>
-                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')" class="fa-solid fa-xmark x-mark"></i>
+                            <i onclick="CloseAll('card-one-pup-main','card-two-pup-main','card-three-pup-main','card-four-pup-main','card-five-pup-main')"
+                                class="fa-solid fa-xmark x-mark"></i>
                         </div>
                         <div class="card-one-pop-two" id="section-card-five-two">
                             <div class="card-one-pop-two-inner"
@@ -1452,24 +1479,25 @@
                         <div id="card-five-calender-one">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-three" id="section-card-five-three">
                             <div class="card-one-pop-three-inner"
@@ -1478,27 +1506,28 @@
                                 <p>10/15/18</p>
                             </div>
                         </div>
-                        <div  id="card-five-calender-two">
+                        <div id="card-five-calender-two">
                             <div class="calendar">
                                 <div class="headline">
-                                  <span class="click-left"><i class="octicon octicon-triangle-left"></i></span>
-                                  <span class="month">JANUARY</span>
-                                  <span class="divider">&nbsp;&nbsp;<i class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
-                                  <span class="year">2022</span>
-                                  <span class="click-right"><i class="octicon octicon-triangle-right"></i></span>
+                                    <span class="click-left"><i style='font-size:24px' class='fas'>&#xf0d9;</i></span>
+                                    <span class="month">JANUARY</span>
+                                    <span class="divider">&nbsp;&nbsp;<i
+                                            class="octicon octicon-primitive-dot"></i>&nbsp;&nbsp;</span>
+                                    <span class="year">2022</span>
+                                    <span class="click-right"><i style='font-size:24px' class='fas'>&#xf0da;</i></span>
                                 </div>
                                 <div class="weekdays">
-                                  <div class="day">MON</div>
-                                  <div class="day">TUE</div>
-                                  <div class="day">WED</div>
-                                  <div class="day">THU</div>
-                                  <div class="day">FRI</div>
-                                  <div class="day">SAT</div>
-                                  <div class="day">SUN</div>
+                                    <div class="day">MON</div>
+                                    <div class="day">TUE</div>
+                                    <div class="day">WED</div>
+                                    <div class="day">THU</div>
+                                    <div class="day">FRI</div>
+                                    <div class="day">SAT</div>
+                                    <div class="day">SUN</div>
                                 </div>
                                 <div class="days">
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="card-one-pop-four" id="section-card-five-four"
                             onclick="ShowTopThreeTwoThree('card-five-top-three','card-five-calender-one','card-five-calender-two','card-five-view-map','card-five-pup-main','section-card-five-one','section-card-five-two','section-card-five-three','section-card-five-four','section-card-five-five')">
@@ -1729,9 +1758,831 @@
             </div>
             <!-- Card Section End -->
         </section>
+        <!-- Progress and Zinc Chart   Start-->
+        <section>
+            <div class="fade-out-container">
+                <div class="fade-out-main">
+                    <div class="header-text">
+
+                    </div>
+
+                    <div class="chat-main-container">
+                        <div data-aos="fade-right" class="chat-box">
+                            <p>Looks like your company's 
+                                <span> Coursework Performance </span>
+                                has increased in several areas since last month. Nice job!
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="progress-container">
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-one')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Wifi</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-one')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-one">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Primer WiFi</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental WiFi</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced WiFi</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate WiFi</h4>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two color-change animation-two "></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-two')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>RF</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-two')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-two">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Primer RFe</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced RF</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate RF</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental RF</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two color-change animation-two "></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main"  onclick="OpenProgressBar('progress-bar-three')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Video</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-three')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-three">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced Video</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Video</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Primer Video</h4>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Video</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two color-change animation-two "></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-four')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Optical Theory</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-four')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-four">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Optical Theroy</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced Optical Theroy</h4>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-five')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Multiplexing</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-five')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-five">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Multiplexing</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced Multiplexing</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Multiplexing</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-six')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Electrical Theory</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-six')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-six">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Electrical Theory</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Electrical Theory</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-seven')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Network Data</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-seven')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-seven">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Network Data</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-eight')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Headend</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-eight')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-eight">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Headend</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Headend</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Primer Headend</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Advanced Headend</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two color-change animation-two "></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-nine')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Circuit Switched Networks</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-nine')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-nine">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Circuit Switched Networks</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Circuit Switched Networks</h4>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Full-one-progress-barr">
+                    <div class="wifi-container">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-ten')">
+                            <div class="wifi-icon">
+                                <i class="fa fa-angle-up"></i>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                            <p>Ethernet</p>
+                        </div>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-ten')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="progress-bar-one" id="progress-bar-ten">
+
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Fundamental Ethernet</h4>
+                                <div class="your-comany">
+                                    <div class="light-green-color"></div>
+                                    <div class="yellow-color"></div>
+                                    <span>Your Company</span>
+                                </div>
+                                <div class="similar-company">
+                                    <div class="dark_blue"></div>
+                                    <span>Similar Companies</span>
+                                </div>
+                                <h5>Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Primer Ethernet</h4>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="prog_1">
+                            <li>
+                                <h4>Intermediate Ethernet</h4>
+                                <h5 class="suggestion-color">Suggestions</h5>
+
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-one animation-one"></div>
+
+                            </li>
+
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-value bar-two animation-two"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+        <!-- Progress and Zinc Chart   End-->
     </section>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/index.js"></script>
 
 </html>

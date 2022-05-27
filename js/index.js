@@ -267,3 +267,16 @@ $('.click-right').on('click', function(e) {
   }
   loadCalendar(new Date(currentYear, currentMonth));
 });
+
+// Calender end 
+
+const OpenProgressBar=(ProgressBar)=>{
+
+    if(document.getElementById(ProgressBar).style.display=="block"){
+        document.getElementById(ProgressBar).style.display="none"
+    }
+    else{
+        document.getElementById(ProgressBar).style.display="block"
+    } 
+}
+AOS.init();

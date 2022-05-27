@@ -731,3 +731,221 @@ sup {
     border: 1px solid #ad0;
   }
   /* Calender  End */
+  /* Cards End  */
+
+  /* Progress and Zinc Chart Start */
+  .progress {
+    margin-bottom:10px;
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 16px;
+    width: 100%;
+  }
+  .progress-value {
+    box-shadow: 0 10px 40px -10px ;
+    border-radius: 100px;   
+    height: 16px;
+    width: 0;
+  }
+  .animation-one{
+      animation: load-one 3s normal forwards;
+  }
+  .animation-two{
+    animation: load-two 3s normal forwards;
+}
+  
+  .bar-one{
+    background: #31D6C4;
+  }
+  .bar-two{
+      background: #0093F1;;
+  }
+ 
+  
+  @keyframes load-one {
+    0% { width: 0; }
+    100% { width: 80% }
+  }
+  @keyframes load-two {
+    0% { width: 0; }
+    100% { width: 64% }
+  }
+  .progress-bar{
+      margin-top: 15px;
+  }
+  .progress-container{
+      width: 58%;
+  }
+  .progress-bar-one{
+    padding: 0 30px;
+  }
+  .progress-bar-one ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+  }
+  .progress-bar-one ul li:nth-child(1){
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .progress-bar-one ul li span:first-child {
+    color: #0190EC;
+    margin-left: 10px;
+}
+.progress-bar-one ul li span {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4px;
+}
+.light-green-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 4px;
+    background: #4EE2C0;
+}
+.yellow-color{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #DCB337;
+    margin-left: 4px;
+}
+.your-comany{
+    display: flex;
+    align-items: center;
+}
+.similar-company{
+    display: flex;
+    align-items: center;
+}
+.dark_blue{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0190EC;
+    margin-left: 10px;
+}
+
+.progress-bar-one ul li h4 {
+    color: #8D9096;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.progress-bar-one ul li h5 {
+    color: #476076;
+    padding-right: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wifi-container{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0px 19px  0px 0px;
+}
+.wifi-main{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0px 30px 0px 6px;
+    cursor: pointer;
+}
+.wifi-main p{
+    margin-left: 10px;
+    margin-top: 8px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.wifi-icon{
+    display: flex;
+    flex-direction: column;
+    
+}
+.three-dot-wifi{
+    margin-top: 30px;
+}
+.three-dot-wifi-icon{
+    cursor: pointer;
+    color: #ADB0B9;
+}
+.suggestion-color{
+    color: #F5A623!important;
+}
+.color-change{
+    background-color: #F5A623!important;;
+}
+
+#progress-bar-one{
+    display: block;
+}
+#progress-bar-two{
+    display: none;
+}
+#progress-bar-three{
+    display: none;
+}
+#progress-bar-four{
+    display: none;
+}
+#progress-bar-five{
+    display: none;
+}
+#progress-bar-six{
+    display: none;
+}
+#progress-bar-seven{
+    display: none;
+}
+#progress-bar-eight{
+    display: none;
+}
+#progress-bar-nine{
+    display: none;
+}
+#progress-bar-ten{
+    display: none;
+}
+/* Progress End */
+/* Fade Out */
+.fade-out-container{
+    width:41.66666667%;
+}
+.chat-main-container .chat-box:nth-child(odd){
+    background: #444E68;
+    max-width: 415px;
+    position: relative;
+    top: -30px;
+    margin-top: 34px;
+}
+.chat-main-container .chat-box p{
+    color: #8D97B1;
+    font-size: 17px;
+    padding: 29px 88px 41px 56px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
