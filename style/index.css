@@ -734,6 +734,9 @@ sup {
   /* Cards End  */
 
   /* Progress and Zinc Chart Start */
+  .section-two{
+    background: #323B52;
+  }
   .progress {
     margin-bottom:10px;
     background: rgba(255,255,255,0.1);
@@ -939,9 +942,40 @@ sup {
     background: #444E68;
     max-width: 415px;
     position: relative;
-    top: -30px;
+    /* top: 21px; */
+    left: 67px;
     margin-top: 34px;
 }
+.chat-main-container .chat-box:nth-child(odd)::after{
+    content: '';
+    border-left: 31px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 24px solid #444e68;
+    position: absolute;
+    left: 34px;
+    bottom: -24px;
+}
+.chat-main-container .chat-box:nth-child(even) {
+    background: #444E68;
+    max-width: 415px;
+    margin-left: 117px;
+    position: relative;
+    top: -41px;
+    margin-top: 93px;
+    margin-bottom: 15px;
+}
+.chat-main-container .chat-box:nth-child(even) p:after {
+    content: '';
+    border-left: 0px solid transparent;
+    border-right: 31px solid transparent;
+    border-top: 24px solid #404a62;
+    position: absolute;
+    right: 25px;
+    bottom: -24px;
+}
+
+
+
 .chat-main-container .chat-box p{
     color: #8D97B1;
     font-size: 17px;
