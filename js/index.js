@@ -279,4 +279,22 @@ const OpenProgressBar=(ProgressBar)=>{
         document.getElementById(ProgressBar).style.display="block"
     } 
 }
+ const OpenExtraContainer=(OpnContainer)=>{
+    document.getElementById(OpnContainer).style.display="block"
+
+ }
+ const CloseExtraContainer=(CloseContainer)=>{
+    document.getElementById(CloseContainer).style.display="none"
+
+ }
+ const OpenPopUpSuggestion=(OpenSuggestion)=>{
+     document.getElementById(OpenSuggestion).style.display="block"
+
+ }
+ const ClosePopUpSuggestion=(CloseSuggestion)=>{
+    document.getElementById(CloseSuggestion).style.display="none"
+
+}
+
+
 AOS.init();
