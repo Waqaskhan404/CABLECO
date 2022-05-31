@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/index.css" />
     <title>Cable Co</title>
 </head>
@@ -84,7 +85,7 @@
                                         <sup class="plus">+</sup>
                                         <span class="zero">0</span>
                                         <span class="point">.1</span>
-                                        <sup class="percentage">%</sup>
+                                        <sup class="percentage-one">%</sup>
                                     </h5>
                                 </div>
                             </div>
@@ -426,7 +427,7 @@
                                         <sup class="plus">-</sup>
                                         <span class="zero">2</span>
                                         <span class="point">.1</span>
-                                        <sup class="percentage">%</sup>
+                                        <sup class="percentage-one">%</sup>
                                     </h5>
                                 </div>
                             </div>
@@ -767,7 +768,7 @@
                                         <sup class="plus">-</sup>
                                         <span class="zero">8</span>
                                         <span class="point">.63</span>
-                                        <sup class="percentage">%</sup>
+                                        <sup class="percentage-one">%</sup>
                                     </h5>
                                 </div>
                             </div>
@@ -1103,7 +1104,7 @@
                                         <sup class="plus">+</sup>
                                         <span class="zero">3</span>
                                         <span class="point">.41</span>
-                                        <sup class="percentage">%</sup>
+                                        <sup class="percentage-one">%</sup>
                                     </h5>
                                 </div>
                             </div>
@@ -1442,7 +1443,7 @@
                                         <sup class="plus">-</sup>
                                         <span class="zero">3</span>
                                         <span class="point">.43</span>
-                                        <sup class="percentage">%</sup>
+                                        <sup class="percentage-one">%</sup>
                                     </h5>
                                 </div>
                             </div>
@@ -1758,11 +1759,160 @@
             </div>
             <!-- Card Section End -->
         </section>
-        
+
+        <!-- section utilization start -->
+        <section class="section-utilization">
+            <div class="col-sm-5">
+                <div class="progress_image">
+                    <div class="inner_container alone_click">
+                        <i class="fa-solid three-dots-icon fa-ellipsis"></i>
+                    </div>
+                    <div class="popup_inner alone_popup" style="display: none;">
+                        <div class="utlizatio-popup">
+                        <div>
+                            <p>The number of individuals utilizing the metrics (except membership)
+                                being measured on the metrics items below.</p>
+                        </div>
+                        <div>
+                            <div class="icon_close"><i class="fa-solid fa-xmark x-mark"></i></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="header_text">
+                        <h3>Utilization</h3>
+                    </div>
+                <div class="image_container comcast_section_u">
+                    <div class="first-circle-block">
+
+                        <div class="animation-area">
+                            <div class="extra-bc"></div>
+                            <div class="first-circle percentage__num1" data-percentage="73">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="circle-inner" cx="50" cy="50" r="45" fill="none"
+                                        stroke-dasharray="2, 2" transform="rotate(-90 50 50)"></circle>
+                                    <circle class="circle1" cx="50" cy="50" r="45" transform="rotate(-90 50 50)">
+                                    </circle>
+                                </svg>
+                            </div>
+                            <div class="second-circle percentage__num11" data-percentage="27">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="circle-inner" cx="50" cy="50" r="45" fill="none"
+                                        stroke-dasharray="2, 4" transform="rotate(-90 50 50)"></circle>
+                                    <circle class="circle11" cx="50" cy="50" r="45" transform="rotate(-90 50 50)">
+                                    </circle>
+                                </svg>
+                                <div class="percentagearea">
+                                    <div class="pink">
+                                        <h1><span class="percentage__num121" data-percentage="12322"></span></h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="myChart" class="chart--container">
+                    </div>
+                    <div class="chart-list">
+                        <ul>
+                            <li><span class="red_color"></span><p>Courses</p> </li>
+                            <li><span class="light_blue_color"></span><p>Chapter</p> </li>
+                            <li><span class="purple_color"></span><p>foundation</p> </li>
+                            <li><span class="blue_color"></span><p>Certifications</p> </li>
+                            <li><span class="light_green_color"></span><p>volunteer</p> </li>
+                            <li><span class="pink_color"></span><p>website</p> </li>
+                            <li><span class="yellow_color"></span><p>expo</p> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                </div>
+
+                <div class="progress_image prog_img_second">
+                <div class="image_container ex_image_container">
+                    <div class="utilization_container">
+                        <div class="background">
+                            <div>
+                                <h1 class="percentage__num3" data-percentage="51"></h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="inner_container ex_container graph_outer">
+                                <i class="fa-solid three-dots-icon fa-ellipsis"></i>
+                            </div>
+                            
+                            <div class="popup_graph_ex">
+                                <div class="popup-ex-inner">
+                                <div>
+                                    <p>Average time to complete a course.</p>
+                                </div>
+                                <div>
+                                    <div class="icon_close"><i class="fa-solid fa-xmark x-mark"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="header_text wea">
+                                <h3>Course Duration Average <br><span>(in Days)</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skyblue_svg">
+                        <div class="circle-block circle_2">
+
+                            <div class="utilization_container">
+
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="circle-inner2" cx="50" cy="50" r="45" r="100" fill="none"
+                                        stroke-dasharray="2, 4" transform="rotate(-90 50 50)"></circle>
+                                    <circle class="circle2" cx="50" cy="50" r="45" transform="rotate(-90 50 50)">
+                                    </circle>
+                                </svg>
+
+                                <div class="percentage percentage2">
+                                    <h1><span class="percentage__num2" data-percentage="35"></span></h1>
+                                    <p>OVERALL SCORE</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="foot_text_svg">
+                            <div class="inner_container ex_container graph_outer">
+                                <i class="fa-solid three-dots-icon fa-ellipsis"></i>
+                            </div>
+                            <div class="popup_graph_ex">
+                                <div class="popup-ex-inner">
+                                <div>
+                                    <p>The aggregate of individuals engagement scores.</p>
+                                </div>
+                                  <div>
+                                    <div class="icon_close"><i class="fa-solid fa-xmark x-mark"></i></div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="header_text">
+                                <h3>Single Engagement</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-sm-7">
+                
+            </div>
+
+
+
+        </section>
+        <!-- section utilization End -->
         <!-- Progress and Zinc Chart   Start-->
         <section class="section-two">
-            
-        <div class="fade-out-container">
+
+            <div class="fade-out-container">
                 <div class="fade-out-main">
                     <div class="header-text">
                         <h1>Insights</h1>
@@ -1770,7 +1920,7 @@
 
                     <div class="chat-main-container">
                         <div data-aos="fade-right" class="chat-box aos-init aos-animate">
-                            <p>Looks like your company's 
+                            <p>Looks like your company's
                                 <span> Coursework Performance </span>
                                 has increased in several areas since last month. Nice job!
                             </p>
@@ -1792,13 +1942,15 @@
                         </div>
                         <div data-aos="fade-left" class="chat-box aos-init aos-animate">
                             <p>
-                                Certification is one of the best ways to keep your company's skills current and remain competitive. Stay on top of your company's
+                                Certification is one of the best ways to keep your company's skills current and remain
+                                competitive. Stay on top of your company's
                                 <span>Certification Performance.</span>
                             </p>
                         </div>
                         <div data-aos="fade-right" class="chat-box aos-init aos-animate">
                             <p>
-                                Want to know who your company's <span>Top Performers</span> are? You can see them sorted by areas of expertise and get their <span>Member Transcripts</span> right here.
+                                Want to know who your company's <span>Top Performers</span> are? You can see them sorted
+                                by areas of expertise and get their <span>Member Transcripts</span> right here.
 
                             </p>
                         </div>
@@ -1807,8 +1959,8 @@
 
                 <div class="img-insight-container">
                     <img src="./images/chat2.png" alt="insightLogo">
-    
-    
+
+
                 </div>
             </div>
 
@@ -1819,107 +1971,108 @@
                     <span>Add More</span>
                 </div>
                 <div class="extra-wifi-container" id="extra-container">
-            <div class="extra-inner">
-                <div class="close-all-menu-x"><i class="fa-solid fa-xmark" onclick="CloseExtraContainer('extra-container')" ></i></div>
-                <div class="add-more-menu">
-                    <div class="close-window-x-mark">
-                        <div><i class="fa fa-window-close"></i></div>
-                        <p>Wifi</p>
+                    <div class="extra-inner">
+                        <div class="close-all-menu-x"><i class="fa-solid fa-xmark"
+                                onclick="CloseExtraContainer('extra-container')"></i></div>
+                        <div class="add-more-menu">
+                            <div class="close-window-x-mark">
+                                <div><i class="fa fa-window-close"></i></div>
+                                <p>Wifi</p>
+                            </div>
+                            <div class="three-dots-pink">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="three-dots-pink">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>Access NetWork</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>Cabling</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>Access NetWork</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>DOCSIS</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>Cabling</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>Headend</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>DOCSIS</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>Home Networking</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>Headend</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>Video</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>Home Networking</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
+                    <div class="extra-inner-2nd">
+                        <div class="extra-inner-upper">
+                            <div class="up-down-wifi-inner">
+                                <i class="fa fa-angle-up extra-up"></i>
+                                <i class="fa fa-angle-down extra-up"></i>
+                            </div>
+                            <p>VOIP</p>
+                        </div>
+                        <div class="extra-inner-2nd-three-dots">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
-                    <p>Video</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            <div class="extra-inner-2nd">
-                <div class="extra-inner-upper">
-                    <div class="up-down-wifi-inner">
-                    <i class="fa fa-angle-up extra-up"></i>
-                    <i class="fa fa-angle-down extra-up"></i>
-                    </div>
-                    <p>VOIP</p>
-                </div>
-                <div class="extra-inner-2nd-three-dots">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-            </div>
-            
-                
-            </div>
 
-            
+
+                </div>
+
+
                 <div class="Full-one-progress-barr">
                     <div class="wifi-container">
                         <div class="wifi-main" onclick="OpenProgressBar('progress-bar-one')">
@@ -1929,7 +2082,8 @@
                             </div>
                             <p>Wifi</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-one')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-one')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2003,7 +2157,8 @@
                         <ul class="prog_1">
                             <li>
                                 <h4>Intermediate WiFi</h4>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion">
@@ -2012,24 +2167,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2055,7 +2211,8 @@
                             </div>
                             <p>RF</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-two')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-two')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2147,14 +2304,15 @@
                 </div>
                 <div class="Full-one-progress-barr">
                     <div class="wifi-container">
-                        <div class="wifi-main"  onclick="OpenProgressBar('progress-bar-three')">
+                        <div class="wifi-main" onclick="OpenProgressBar('progress-bar-three')">
                             <div class="wifi-icon">
                                 <i class="fa fa-angle-up"></i>
                                 <i class="fa fa-angle-down"></i>
                             </div>
                             <p>Video</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-three')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-three')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2209,7 +2367,8 @@
                         <ul class="prog_1">
                             <li>
                                 <h4>Primer Video</h4>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-two')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-two')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-two">
@@ -2218,24 +2377,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-two')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-two')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2279,7 +2439,8 @@
                             </div>
                             <p>Optical Theory</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-four')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-four')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2298,7 +2459,8 @@
                                     <div class="dark_blue"></div>
                                     <span>Similar Companies</span>
                                 </div>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-four')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-four')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-four">
@@ -2307,24 +2469,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-four')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-four')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2338,13 +2501,14 @@
                                     <div class="progress-value bar-two animation-two"></div>
                                 </div>
                             </li>
-                            
-                            
+
+
                         </ul>
                         <ul class="prog_1">
                             <li>
                                 <h4>Advanced Optical Theroy</h4>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-three')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-three')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-three">
@@ -2353,24 +2517,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-three')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-three')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2380,7 +2545,7 @@
                             </li>
 
                             <li>
-                               
+
                                 <div class="progress">
                                     <div class="progress-value bar-two animation-two"></div>
                                 </div>
@@ -2397,7 +2562,8 @@
                             </div>
                             <p>Multiplexing</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-five')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-five')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2478,7 +2644,8 @@
                             </div>
                             <p>Electrical Theory</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-six')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-six')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2497,7 +2664,8 @@
                                     <div class="dark_blue"></div>
                                     <span>Similar Companies</span>
                                 </div>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-five')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-five')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-five">
@@ -2506,24 +2674,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-five')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-five')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2544,7 +2713,7 @@
                                 <h5>Suggestions</h5>
 
                             </li>
-                            
+
                             <li>
                                 <div class="progress">
                                     <div class="progress-value bar-one animation-one"></div>
@@ -2568,7 +2737,8 @@
                             </div>
                             <p>Network Data</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-seven')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-seven')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2613,7 +2783,8 @@
                             </div>
                             <p>Headend</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-eight')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-eight')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2712,7 +2883,8 @@
                             </div>
                             <p>Circuit Switched Networks</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-nine')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-nine')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2775,7 +2947,8 @@
                             </div>
                             <p>Ethernet</p>
                         </div>
-                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-ten')"><i class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
+                        <div class="three-dot-wifi" onclick="OpenProgressBar('progress-bar-ten')"><i
+                                class="fa-solid fa-ellipsis-vertical three-dot-wifi-icon"></i>
                         </div>
                     </div>
 
@@ -2812,7 +2985,8 @@
                         <ul class="prog_1">
                             <li>
                                 <h4>Primer Ethernet</h4>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-seven')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-seven')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-seven">
@@ -2821,27 +2995,28 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-seven')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-seven')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
-                            
+
                             <li>
                                 <div class="progress">
                                     <div class="progress-value bar-one animation-one"></div>
@@ -2857,7 +3032,8 @@
                         <ul class="prog_1">
                             <li>
                                 <h4>Intermediate Ethernet</h4>
-                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-six')">Suggestions</h5>
+                                <h5 class="suggestion-color" onclick="OpenPopUpSuggestion('pop-up-suggestion-six')">
+                                    Suggestions</h5>
 
                             </li>
                             <div class="pop-up-suggestion-main" id="pop-up-suggestion-six">
@@ -2866,24 +3042,25 @@
                                         <i class="fa fa-exclamation-triangle"></i>
                                         <div>
                                             <span class="suggestion-color pop-up-segggestion">Suggestions</span>
-                                            <i class="fa-solid fa-xmark suggestion-x-mark" onclick="ClosePopUpSuggestion('pop-up-suggestion-six')"></i>
+                                            <i class="fa-solid fa-xmark suggestion-x-mark"
+                                                onclick="ClosePopUpSuggestion('pop-up-suggestion-six')"></i>
                                         </div>
-    
-    
+
+
                                     </div>
                                     <div class="second_container">
-                                    <div class="text_section">
-                                        <p>It is a long established fact that a reader will be
-                                            distracted by the readable content of a page when looking at its layout
-                                            . The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content here,
-                                            content here',<br><br> making it look like readable English.</p>
+                                        <div class="text_section">
+                                            <p>It is a long established fact that a reader will be
+                                                distracted by the readable content of a page when looking at its layout
+                                                . The point of using Lorem Ipsum is that it has a more-or-less
+                                                normal distribution of letters, as opposed to using 'Content here,
+                                                content here',<br><br> making it look like readable English.</p>
+                                        </div>
+                                        <div class="two-buttons">
+                                            <button class="btns btn_orange" type="button">Sound good</button>
+                                            <button class="btns btn_gray" type="button">No thanks</button>
+                                        </div>
                                     </div>
-                                    <div class="two-buttons">
-                                        <button class="btns btn_orange" type="button">Sound good</button>
-                                        <button class="btns btn_gray" type="button">No thanks</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <li>
@@ -2902,12 +3079,12 @@
                 </div>
             </div>
 
-            
-        </div>
+
+            </div>
         </section>
         <!-- Progress and Zinc Chart   End-->
     </section>
-    
+
     <section class="footer-wrapper">
         <div class="upper-footer-wrapper">
             <div class="accounts col-sm-2">
@@ -2978,9 +3155,11 @@
     </section>
 
 </body>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/index.js"></script>
 
 </html>
