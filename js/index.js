@@ -318,6 +318,11 @@ const OpenAlertCardFive = (
 const CloseAlert = (AlertMsg) => {
   document.getElementById(AlertMsg).style.display = "none";
 };
+
+const OpenRightPopUp = (OpenRightPopUp) => {
+  document.getElementById(OpenRightPopUp).style.display = "block";
+};
+
 // Calender JS //
 
 var currentMonth = 0,

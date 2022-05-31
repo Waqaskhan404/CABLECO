@@ -142,6 +142,7 @@ p {
   margin: 5px;
   color: #b3a9a9;
   text-decoration: none;
+  cursor: pointer;
 }
 .dashborad-btn {
   color: #fff;
@@ -743,6 +744,11 @@ sup {
   background: #323b52;
   display: flex;
 }
+.progress-inner-main {
+  position: absolute;
+  width: 100%;
+  top: -225px;
+}
 tspan {
   font-size: 10px !important;
   font-weight: 300 !important;
@@ -752,9 +758,21 @@ tspan {
   height: 22px;
   padding-right: 2px;
 }
+.section-two .team_txt h1 {
+  margin-left: 0px;
+  text-align: center;
+}
+.section-two .header_text h1 {
+  margin-left: 65px;
+  color: #444e68;
+  font-size: 62px;
+  font-family: "Old Standard TT", serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 .extra-wifi-container {
   position: absolute;
-  width: 49.5%;
+  width: 91.5%;
   background-color: rgba(37, 45, 62, 0.9);
   z-index: 1;
   padding: 0px 30px 80px 30px;
@@ -868,12 +886,24 @@ tspan {
 .animation-two {
   animation: load-two 3s normal forwards;
 }
+.animation-blue-yellow-line {
+  animation: blue-yellow-line 3s normal forwards;
+}
 
 .bar-one {
   background: #31d6c4;
 }
 .bar-two {
   background: #0093f1;
+}
+
+@keyframes blue-yellow-line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes load-one {
@@ -897,6 +927,7 @@ tspan {
 }
 .progress-container {
   width: 58%;
+  position: relative;
 }
 .progress-bar-one {
   padding: 0 30px;
@@ -977,8 +1008,11 @@ tspan {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 9px;
   padding: 0px 19px 0px 0px;
+}
+.mt {
+  margin-top: 35px;
 }
 .wifi-main {
   color: #fff;
@@ -987,7 +1021,7 @@ tspan {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 14px;
   padding: 0px 30px 0px 6px;
   cursor: pointer;
 }
@@ -1189,16 +1223,18 @@ tspan {
   font-family: "Old Standard TT", serif;
 }
 .header-text {
-  margin-top: 34px;
+  margin-top: -46px;
+  margin-bottom: 87px;
   margin-left: 50px;
-  padding-top: 21px;
 }
 .section-two .img-insight-container {
   display: flex;
+  margin-top: 33px;
   justify-content: center;
   padding-bottom: 80px;
+  margin-bottom: 80px;
 }
-section-two .img-insight-container img {
+.section-two .img-insight-container img {
   width: 240px;
   height: 139px;
 }
@@ -1206,6 +1242,11 @@ section-two .img-insight-container img {
 
 .section-utilization {
   background: #39425a;
+  display: flex;
+  background-image: url(../images/grp.jpg);
+  background-repeat: no-repeat;
+  background-size: 116% 122%;
+  background-position: 0 8%;
 }
 .col-sm-5 {
   width: 41.66666667%;
@@ -1228,6 +1269,12 @@ section-two .img-insight-container img {
   justify-content: space-between;
 }
 .pop-up-graph {
+  display: none;
+}
+.progress_image {
+  height: 338px;
+}
+#utalize-rightpopup {
   display: none;
 }
 .section-utilization .progress_image .skyblue_svg .foot_text_svg {
@@ -1259,10 +1306,26 @@ section-two .img-insight-container img {
   font-size: 11px;
 }
 .col-sm-7 {
-  width: 41.66666667%;
+  width: 58.33333333%;
+  position: relative;
+  min-height: 1px;
+}
+.mr-ml {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section_utilization .container_r_graph {
+  padding-right: 30px;
+}
+.inner_container {
+  display: flex;
 }
 .section-utilization .inner_container {
   padding-top: 30px;
+}
+.right-side-utilization {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .section-utilization .header_text h3 {
@@ -1280,7 +1343,7 @@ section-two .img-insight-container img {
   display: none;
 }
 #myChart-wrapper {
-  top: -74px;
+  top: -99px;
   left: -56px;
 }
 .chart-list {
@@ -1353,8 +1416,65 @@ section-two .img-insight-container img {
   border-radius: 50%;
   background: #dcb337;
 }
+
 .section-utilization .progress_image .image_container {
   display: flex;
+}
+.popup_inner {
+  position: absolute;
+  background-color: rgba(37, 45, 62, 0.9);
+  width: 88%;
+  z-index: 2;
+  padding: 7px;
+}
+.container_r_graph {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.section-utilization .container_r_graph h3 {
+  color: #c1c4cb;
+  font-size: 19px;
+  margin: 10px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.section-utilization .container_r_graph ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  width: 289px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+}
+.section-utilization .container_r_graph ul li:first-child {
+  color: #627091;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.section-utilization .container_r_graph ul li:nth-child(2) {
+  color: #eba026;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.section-utilization .container_r_graph ul li:nth-child(3) {
+  color: #048be2;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.months ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.months ul li {
+  color: #6f7a84;
+  font-family: Roboto;
+  font-weight: 500;
 }
 .popup_inner p {
   color: #fff;
@@ -1376,7 +1496,18 @@ section-two .img-insight-container img {
   display: flex;
 }
 .alone_popup {
+  position: absolute;
+  left: 73px;
+  top: 35px;
+}
+#container_svg {
   position: relative;
+  margin-top: 54px;
+}
+.blue-line {
+  position: absolute;
+  left: 0;
+  top: 31px;
 }
 .utlizatio-popup {
   position: absolute;
@@ -1503,7 +1634,7 @@ section-two .img-insight-container img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 37px;
+  margin-top: 14px;
 }
 .animation-area .extra-bc {
   position: absolute;
@@ -1647,7 +1778,6 @@ section-two .img-insight-container img {
 .second-circle svg {
   width: 130px;
 }
-
 /* Section Utilization End */
 /* Footer Start */
 .footer-wrapper div {
