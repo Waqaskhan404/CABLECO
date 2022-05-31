@@ -1765,9 +1765,9 @@
             <div class="col-sm-5">
                 <div class="progress_image">
                     <div class="inner_container alone_click">
-                        <i class="fa-solid three-dots-icon fa-ellipsis"></i>
+                        <i class="fa-solid three-dots-icon fa-ellipsis" onclick="OpenLeftPopup('left-utilize-popup')"></i>
                     </div>
-                    <div class="popup_inner alone_popup" style="display: none;">
+                    <div class="popup_inner-left alone_popup-left" id="left-utilize-popup"">
                         <div class="utlizatio-popup">
                         <div>
                             <p>The number of individuals utilizing the metrics (except membership)
@@ -1910,9 +1910,9 @@
                                 <i class="fa-solid three-dots-icon fa-ellipsis" onclick="OpenRightPopUp('utalize-rightpopup')"></i>
                             </div>
                         </div>
-                        <div class="popup_inner alone_popup" id="utalize-rightpopup">
+                        <div class="popup_inner-right " id="utalize-rightpopup">
                         <div>
-                            <div class="icon_close"><i class="fa-solid fa-xmark alert-x-mark"></i></div>
+                            <div class="icon_close"><i class="fa-solid fa-xmark alert-x-mark" onclick="CloseRightPopUp('utalize-rightpopup')"></i></div>
                         </div>
                         <div>
                             <p>The number of individuals utilizing the metrics (except membership)

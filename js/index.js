@@ -322,6 +322,12 @@ const CloseAlert = (AlertMsg) => {
 const OpenRightPopUp = (OpenRightPopUp) => {
   document.getElementById(OpenRightPopUp).style.display = "block";
 };
+const CloseRightPopUp = (CloseRightPopUp) => {
+  document.getElementById(CloseRightPopUp).style.display = "none";
+};
+const OpenLeftPopup = (OpenLeftPopUp) => {
+  document.getElementById(OpenLeftPopUp).style.display = "block";
+};
 
 // Calender JS //
 

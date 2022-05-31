@@ -1315,7 +1315,7 @@ tspan {
   padding-right: 15px;
 }
 .section_utilization .container_r_graph {
-  padding-right: 30px;
+  padding-right: 15px;
 }
 .inner_container {
   display: flex;
@@ -1420,9 +1420,27 @@ tspan {
 .section-utilization .progress_image .image_container {
   display: flex;
 }
-.popup_inner {
+.popup_inner-right {
   position: absolute;
+  z-index: 2;
+  padding: 7px;
+  right: 9px;
   background-color: rgba(37, 45, 62, 0.9);
+  top: 38px;
+}
+#left-utilize-popup {
+  display: none;
+}
+.popup_inner-right p {
+  color: #fff;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding-right: 17px;
+}
+.popup_inner-left {
+  position: relative;
   width: 88%;
   z-index: 2;
   padding: 7px;
@@ -1476,7 +1494,7 @@ tspan {
   font-family: Roboto;
   font-weight: 500;
 }
-.popup_inner p {
+.popup_inner-left p {
   color: #fff;
   margin-top: 10px;
   font-family: "Roboto", sans-serif;
@@ -1495,10 +1513,10 @@ tspan {
 .popup-ex-inner {
   display: flex;
 }
-.alone_popup {
+.alone_popup-left {
   position: absolute;
-  left: 73px;
-  top: 35px;
+  left: 41px;
+  width: 40%;
 }
 #container_svg {
   position: relative;
