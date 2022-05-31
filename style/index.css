@@ -1819,6 +1819,33 @@ tspan {
 .second-circle svg {
   width: 130px;
 }
+/* Scroll */
+
+.up_down_left > div {
+  position: fixed;
+  bottom: 19px;
+  left: 11px;
+  z-index: 2;
+}
+.up_down_left span {
+  background: #5a6683;
+  width: 20px;
+  height: 20px;
+  color: #444e68;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+  cursor: pointer;
+  z-index: 9999;
+}
+.teal_color {
+  background: #31d6c4 !important;
+}
+
+/* Scroll End */
+
 /* Section Utilization End */
 /* Footer Start */
 .footer-wrapper div {
