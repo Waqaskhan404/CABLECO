@@ -565,7 +565,7 @@ sup {
 .third-heading h6 {
   width: 64% !important;
 }
-.third-heading .percentage {
+.third-heading .percentage-third {
   top: -54px;
   right: -63px;
 }
@@ -886,6 +886,12 @@ tspan {
 .animation-two {
   animation: load-two 3s normal forwards;
 }
+.animation-three {
+  animation: load-three 3s normal forwards;
+}
+.animation-four {
+  animation: load-four 3s normal forwards;
+}
 .animation-blue-yellow-line {
   animation: blue-yellow-line 3s normal forwards;
 }
@@ -922,6 +928,23 @@ tspan {
     width: 64%;
   }
 }
+@keyframes load-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 87%;
+  }
+}
+@keyframes load-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 99%;
+  }
+}
+
 .progress-bar {
   margin-top: 15px;
 }
@@ -1357,7 +1380,7 @@ tspan {
   margin: 0px;
   z-index: 1;
   padding-left: 0px;
-  top: -9px;
+  top: -34px;
   left: -70px;
 }
 .chart-list ul li {

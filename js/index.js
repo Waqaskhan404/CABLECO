@@ -329,6 +329,9 @@ const OpenLeftPopup = (OpenLeftPopUp) => {
   document.getElementById(OpenLeftPopUp).style.display = "block";
 };
 
+const CloseLeftPopup = (CloseLeftPopUp) => {
+  document.getElementById(CloseLeftPopUp).style.display = "none";
+};
 // Calender JS //
 
 var currentMonth = 0,
