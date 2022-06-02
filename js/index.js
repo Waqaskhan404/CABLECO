@@ -1,5 +1,6 @@
 const ShowPopupMain = (CardOnePupUpMain) => {
   document.getElementById(CardOnePupUpMain).style.display = "block";
+  console.log(CardOnePupUpMain);
 };
 
 const CloseAll = (
@@ -440,6 +441,50 @@ const OpenPopUpSuggestion = (OpenSuggestion) => {
 };
 const ClosePopUpSuggestion = (CloseSuggestion) => {
   document.getElementById(CloseSuggestion).style.display = "none";
+};
+
+// Responsive Card
+
+const ShowPopupCardone = (CardOnePupUpMain) => {
+  if (document.getElementById(CardOnePupUpMain).style.display == "block") {
+    document.getElementById(CardOnePupUpMain).style.display = "none";
+  } else {
+    document.getElementById(CardOnePupUpMain).style.display = "block";
+  }
+};
+const ShowPopuptwoCardOne = (CardOnePupUpMain) => {
+  if (document.getElementById(CardOnePupUpMain).style.display == "block") {
+    document.getElementById(CardOnePupUpMain).style.display = "none";
+  } else {
+    document.getElementById(CardOnePupUpMain).style.display = "block";
+  }
+};
+const ShowSmallScreenCalenderOne = (SmallCardCalender) => {
+  document.getElementById(SmallCardCalender).style.display = "block";
+};
+const TopThreeSmallCard = (SmallCardCalender) => {
+  document.getElementById(SmallCardCalender).style.display = "block";
+};
+const ShowTopSevenSmallCard = (TopSeven) => {
+  if (document.getElementById(TopSeven).style.display == "block") {
+    document.getElementById(TopSeven).style.display = "none";
+  } else {
+    document.getElementById(TopSeven).style.display = "block";
+  }
+};
+const ViewMapSmallCard = (ViewMap) => {
+  document.getElementById(ViewMap).style.display = "block";
+};
+const CustomizeViewSmallCard = (
+  CardOneCalenderOneCardOne,
+  CardOneCalenderTwoCardOne,
+  TopPerforper,
+  ViewMapSmall
+) => {
+  document.getElementById(CardOneCalenderOneCardOne).style.display = "none";
+  document.getElementById(CardOneCalenderTwoCardOne).style.display = "none";
+  document.getElementById(TopPerforper).style.display = "none";
+  document.getElementById(ViewMapSmall).style.display = "none";
 };
 // Section Utilization Start
 
