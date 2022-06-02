@@ -486,6 +486,24 @@ const CustomizeViewSmallCard = (
   document.getElementById(TopPerforper).style.display = "none";
   document.getElementById(ViewMapSmall).style.display = "none";
 };
+
+// Hamburger Menu
+
+const OpenHamburger = (hamBurgerMenu) => {
+  if (document.getElementById(hamBurgerMenu).style.display == "block") {
+    document.getElementById(hamBurgerMenu).style.display = "none";
+  } else {
+    document.getElementById(hamBurgerMenu).style.display = "block";
+  }
+};
+const ShowScteMenu = (ScteMenu) => {
+  if (document.getElementById(ScteMenu).style.display == "block") {
+    document.getElementById(ScteMenu).style.display = "none";
+  } else {
+    document.getElementById(ScteMenu).style.display = "block";
+  }
+};
+
 // Section Utilization Start
 
 let chartConfig = {

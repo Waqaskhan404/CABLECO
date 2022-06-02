@@ -1778,9 +1778,9 @@
                                     <div class="img_text">
                                         <img src="./images/text.png" alt />
                                         <a class="image-click">
-                                            <i class="fa fa-angle-down color-white"></i></a>
+                                            <i class="fa fa-angle-down color-white" onclick="ShowScteMenu('scte-menu')"></i></a>
                                     </div>
-                                    <div class="scte-menu">
+                                    <div class="scte-menu" id="scte-menu">
                                         <p>Company View</p>
                                         <h4>Home</h4>
                                     </div>
@@ -1792,10 +1792,10 @@
                                     <div class="dashboard">
                                         <button class="btn dashborad-btn">Dashboard</button>
                                     </div>
-                                    <div class="special-position">
-                                    <a class="icon hamberger position-ok click-nav">
+                                    <div class="special-position" onclick="OpenHamburger('dropdown')">
+                                    <a class="icon hamberger position-ok click-nav" >
                                         <i class="fa fa-bars color-white"></i></a>
-                                    <div class="dropdow-menu">
+                                    <div class="dropdow-menu" id="dropdown">
                                     <ul>
                                         <li><a>Change Setting</a></li>
                                         <li><a>Export / Share</a></li>
