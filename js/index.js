@@ -444,6 +444,11 @@ const ClosePopUpSuggestion = (CloseSuggestion) => {
 };
 
 // Responsive Card
+const SowCardsOffCard = (id, id2) => {
+  document.querySelector(id).style.display = "block";
+  document.querySelector(id2).style.display = "none";
+  console.log(id, id2);
+};
 
 const ShowPopupCardone = (CardOnePupUpMain) => {
   if (document.getElementById(CardOnePupUpMain).style.display == "block") {
@@ -459,11 +464,43 @@ const ShowPopuptwoCardOne = (CardOnePupUpMain) => {
     document.getElementById(CardOnePupUpMain).style.display = "block";
   }
 };
-const ShowSmallScreenCalenderOne = (SmallCardCalender) => {
+const ShowSmallScreenCalenderOne = (
+  SmallCardCalender,
+  CalenderTwo,
+  topThree,
+  ViewMap,
+  PeriodColor,
+  PeriodDateColor,
+  PeriodColorTwo,
+  PeriodDateColorTwo
+) => {
   document.getElementById(SmallCardCalender).style.display = "block";
+  document.getElementById(CalenderTwo).style.display = "none";
+  document.getElementById(topThree).style.display = "none";
+  document.getElementById(ViewMap).style.display = "none";
+  document.getElementById(PeriodColor).style.color = "#333";
+  document.getElementById(PeriodDateColor).style.color = "#333";
+  document.getElementById(PeriodColorTwo).style.color = "#fff";
+  document.getElementById(PeriodDateColorTwo).style.color = "#fff";
 };
-const TopThreeSmallCard = (SmallCardCalender) => {
+const TopThreeSmallCard = (
+  SmallCardCalender,
+  CalenderTwo,
+  topThree,
+  ViewMap,
+  PeriodColor,
+  PeriodDateColor,
+  PeriodColorTwo,
+  PeriodDateColorTwo
+) => {
   document.getElementById(SmallCardCalender).style.display = "block";
+  document.getElementById(CalenderTwo).style.display = "none";
+  document.getElementById(topThree).style.display = "none";
+  document.getElementById(ViewMap).style.display = "none";
+  document.getElementById(PeriodColor).style.color = "#fff";
+  document.getElementById(PeriodDateColor).style.color = "#fff";
+  document.getElementById(PeriodColorTwo).style.color = "#fff";
+  document.getElementById(PeriodDateColorTwo).style.color = "#fff";
 };
 const ShowTopSevenSmallCard = (TopSeven) => {
   if (document.getElementById(TopSeven).style.display == "block") {
@@ -472,19 +509,24 @@ const ShowTopSevenSmallCard = (TopSeven) => {
     document.getElementById(TopSeven).style.display = "block";
   }
 };
-const ViewMapSmallCard = (ViewMap) => {
-  document.getElementById(ViewMap).style.display = "block";
-};
 const CustomizeViewSmallCard = (
   CardOneCalenderOneCardOne,
   CardOneCalenderTwoCardOne,
   TopPerforper,
-  ViewMapSmall
+  ViewMapSmall,
+  PeriodColor,
+  PeriodDateColor,
+  PeriodColorTwo,
+  PeriodDateColorTwo
 ) => {
   document.getElementById(CardOneCalenderOneCardOne).style.display = "none";
   document.getElementById(CardOneCalenderTwoCardOne).style.display = "none";
   document.getElementById(TopPerforper).style.display = "none";
   document.getElementById(ViewMapSmall).style.display = "none";
+  document.getElementById(PeriodColor).style.color = "#fff";
+  document.getElementById(PeriodDateColor).style.color = "#fff";
+  document.getElementById(PeriodColorTwo).style.color = "#fff";
+  document.getElementById(PeriodDateColorTwo).style.color = "#fff";
 };
 
 // Hamburger Menu
