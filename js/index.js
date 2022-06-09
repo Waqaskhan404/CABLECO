@@ -630,13 +630,174 @@ let chartConfig = {
     },
   ],
 };
-
+// Zinc chart
 zingchart.render({
   id: "myChart",
   data: chartConfig,
   height: "350px",
   width: "350px",
 });
+
+var myConfigmobile = {
+  backgroundColor: "transparent",
+  type: "ring",
+  plot: {
+    slice: "55%",
+    borderWidth: 0,
+    animation: {
+      effect: 2,
+      sequence: 3,
+    },
+    "value-box": {
+      placement: "out",
+      "offset-r": "-10",
+    },
+  },
+  series: [
+    {
+      text: "Courses",
+      values: [10497],
+      lineWidth: 1,
+      backgroundColor: "#FF325E",
+      fontWeight: "lighter",
+    },
+    {
+      text: "Chapter",
+      values: [4554],
+      lineWidth: 1,
+      backgroundColor: "#7FC2F9",
+    },
+    {
+      text: "Foundation",
+      values: [1],
+      lineWidth: 1,
+      backgroundColor: "#3D4760",
+    },
+    {
+      text: "Certifications",
+      values: [1306],
+      lineWidth: 1,
+      backgroundColor: "#079FCE",
+    },
+    {
+      text: "Volunteers",
+      values: [189],
+      lineWidth: 1,
+      backgroundColor: "#4EE2C0",
+    },
+    {
+      text: "Websites",
+      values: [1763],
+      lineWidth: 1,
+      backgroundColor: "#EF32FF",
+    },
+    {
+      text: "EXPO",
+      values: [75],
+      lineWidth: 1,
+      backgroundColor: "#DCB337",
+    },
+  ],
+};
+
+zingchart.render({
+  id: "mymobileChart",
+  data: {
+    graphset: [myConfigmobile],
+  },
+  height: "335",
+  width: "335",
+});
+
+// let mobileChartConfig = {
+//   graphset: [
+//     {
+//       type: "ring",
+//       backgroundColor: "none",
+//       legend: {
+//         item: {
+//           cursor: "pointer",
+//         },
+//         mediaRules: [
+//           {
+//             visible: false,
+//           },
+//         ],
+//       },
+//       plot: {
+//         valueBox: [
+//           {
+//             type: "all",
+//             text: "%t",
+//             placement: "out",
+//           },
+//           {
+//             visible: false,
+//           },
+//         ],
+//         animation: {
+//           effect: "ANIMATION_EXPAND_VERTICAL",
+//           sequence: "ANIMATION_BY_PLOT_AND_NODE",
+//         },
+//         borderWidth: "0px",
+//         slice: "50%",
+//       },
+//       plotarea: {
+//         margin: "70px 0px 10px 0px",
+//         backgroundColor: "transparent",
+//         borderRadius: "10px",
+//         borderWidth: "0px",
+//       },
+//       scaleR: {
+//         refAngle: 300,
+//       },
+//       series: [
+//         {
+//           text: "0.0%",
+//           values: [0],
+//           backgroundColor: "#079FCE",
+//         },
+//         {
+//           text: "7.1%",
+//           values: [1306],
+//           backgroundColor: "#079FCE",
+//         },
+//         {
+//           text: "1.0%",
+//           values: [189],
+//           backgroundColor: "#4EE2C0",
+//         },
+//         {
+//           text: "9.6%",
+//           values: [1763],
+//           backgroundColor: "#EF32FF",
+//         },
+//         {
+//           text: "0.4%",
+//           values: [75],
+//           backgroundColor: "#DCB337",
+//         },
+//         {
+//           text: "57.1%",
+//           values: [10497],
+//           backgroundColor: "#FF325E",
+//         },
+//         {
+//           text: "24.8%",
+//           values: [4554],
+//           backgroundColor: "#7FC2F9",
+//         },
+//       ],
+//     },
+//   ],
+// };
+// zingchart.render({
+//   id: "myChart",
+//   data: mobileChartConfig,
+//   height: "350px",
+//   width: "350px",
+// });
+
 //
 
 $(document).ready(function () {
@@ -937,5 +1098,102 @@ function animationThird() {
       : clearInterval(counter);
   }, 1000 / percentageValue1);
 }
+
+// Slider
+
+$(".slider").each(function () {
+  var $this = $(this);
+  var $group = $this.find(".slide_group");
+  var $slides = $this.find(".slide");
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+
+    advance();
+
+    if ($group.is(":animated") || currentIndex === newIndex) {
+      return;
+    }
+
+    bulletArray[currentIndex].removeClass("active");
+    bulletArray[newIndex].addClass("active");
+
+    if (newIndex > currentIndex) {
+      slideLeft = "100%";
+      animateLeft = "-100%";
+    } else {
+      slideLeft = "-100%";
+      animateLeft = "100%";
+    }
+
+    $slides.eq(newIndex).css({
+      display: "block",
+      left: slideLeft,
+    });
+    $group.animate(
+      {
+        left: animateLeft,
+      },
+      function () {
+        $slides.eq(currentIndex).css({
+          display: "none",
+        });
+        $slides.eq(newIndex).css({
+          left: 0,
+        });
+        $group.css({
+          left: 0,
+        });
+        currentIndex = newIndex;
+      }
+    );
+  }
+
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+      if (currentIndex < $slides.length - 1) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 6000);
+  }
+
+  $(".next_btn").on("click", function () {
+    if (currentIndex < $slides.length - 1) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+
+  $(".previous_btn").on("click", function () {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+
+  $.each($slides, function (index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+
+    if (index === currentIndex) {
+      $button.addClass("active");
+    }
+    $button
+      .on("click", function () {
+        move(index);
+      })
+      .appendTo(".slide_buttons");
+    bulletArray.push($button);
+  });
+
+  advance();
+});
 
 AOS.init();
